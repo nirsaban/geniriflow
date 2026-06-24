@@ -10,11 +10,12 @@ import { useContent } from "@/lib/i18n";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
+/** Make.com webhook that receives lead submissions from the contact form. */
+const WEBHOOK_URL = "https://hook.eu2.make.com/h7qgxsn051uv414kv9ijjvi83aop8mml";
+
 /**
  * Final CTA + lead-capture form. All audit/CTA buttons link to #contact.
- *
- * NOTE: UI-wired only — `handleSubmit` fakes the request. To go live, POST the
- * FormData to an endpoint (email / Next API route / Make / Zapier webhook).
+ * Submissions are POSTed as JSON to the Make.com webhook above.
  */
 export function Contact() {
   const t = useContent().finalCta;
@@ -25,9 +26,17 @@ export function Contact() {
     const form = e.currentTarget; // capture before await (React nulls currentTarget)
     setStatus("submitting");
     try {
-      // const data = Object.fromEntries(new FormData(form));
-      // await fetch("/api/lead", { method: "POST", body: JSON.stringify(data) });
-      await new Promise((r) => setTimeout(r, 800));
+      const data = Object.fromEntries(new FormData(form));
+      const res = await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...data,
+          source: "geniriflow.miltech.cloud",
+          submittedAt: new Date().toISOString(),
+        }),
+      });
+      if (!res.ok) throw new Error(`Webhook responded ${res.status}`);
       setStatus("success");
       form.reset();
     } catch {
