@@ -20,13 +20,24 @@ const LangContext = createContext<LangContextValue>({
 });
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Lang>("en");
+  // Default language is Hebrew (RTL); English is available via the switcher.
+  const [lang, setLang] = useState<Lang>("he");
 
   useEffect(() => {
     const el = document.documentElement;
     el.lang = lang;
     el.dir = lang === "he" ? "rtl" : "ltr";
   }, [lang]);
+
+  // Always open at the top. Some mobile browsers restore the previous scroll
+  // position and were reopening the long page scrolled to the bottom.
+  useEffect(() => {
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    if (!window.location.hash) {
+      // run after first paint so it wins over any late layout shift
+      requestAnimationFrame(() => window.scrollTo(0, 0));
+    }
+  }, []);
 
   return (
     <LangContext.Provider value={{ lang, setLang }}>

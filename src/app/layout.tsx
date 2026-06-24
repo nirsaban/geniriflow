@@ -17,32 +17,34 @@ const rubik = Rubik({
   display: "swap",
 });
 
+const title = `${BRAND.name} — מערכות עסקיות חכמות ותוכנה מותאמת אישית`;
 const description =
-  "GeniriFlow designs and builds smart business systems, custom software, AI-powered workflows, automations, dashboards and operational tools — turning messy operations into organized, growth-ready systems.";
+  "GeniriFlow מאפיינת ובונה מערכות עסקיות חכמות, תוכנה מותאמת אישית, תהליכי AI, אוטומציות ודאשבורדים — והופכת תפעול מבולגן למערכות מסודרות, אוטומטיות ומוכנות לצמיחה.";
 
 export const metadata: Metadata = {
   // TODO: set to the real production domain (resolves OG/Twitter image URLs).
   metadataBase: new URL("https://geniriflow.com"),
   title: {
-    default: `${BRAND.name} — Smart Business Systems & Custom Software`,
+    default: title,
     template: `%s · ${BRAND.name}`,
   },
   description,
   keywords: [
-    "business systems",
-    "custom software",
-    "AI automation",
-    "AI agents",
-    "CRM systems",
-    "WhatsApp automation",
-    "dashboards",
-    "workflow automation",
+    "מערכות עסקיות",
+    "תוכנה מותאמת אישית",
+    "אוטומציה",
+    "סוכני AI",
+    "מערכות CRM",
+    "אוטומציות וואטסאפ",
+    "דאשבורדים",
+    "פיתוח תוכנה",
   ],
   icons: { icon: "/logo.jpeg", apple: "/logo.jpeg" },
   openGraph: {
-    title: `${BRAND.name} — Smart Business Systems & Custom Software`,
+    title,
     description,
     type: "website",
+    locale: "he_IL",
     images: [{ url: "/brand-poster.jpeg", width: 859, height: 1180, alt: BRAND.name }],
   },
   twitter: { card: "summary_large_image", images: ["/brand-poster.jpeg"] },
@@ -57,9 +59,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Default language is English (LTR); the provider flips lang/dir on switch.
+  // Default language is Hebrew (RTL); the provider flips lang/dir on switch.
   return (
-    <html lang="en" dir="ltr" className={`${heebo.variable} ${rubik.variable}`}>
+    <html lang="he" dir="rtl" className={`${heebo.variable} ${rubik.variable}`}>
       <body className="font-sans">
         <LanguageProvider>{children}</LanguageProvider>
       </body>

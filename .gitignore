@@ -30,5 +30,3 @@ next-env.d.ts
 # editor
 .vscode
 
-# nginx self-signed certs (generated on server, never committed)
-/nginx/certs/
