@@ -263,7 +263,7 @@ export const CONTENT: Record<Lang, SectionContent> = {
     products: {
       eyebrow: "Proof, Not Promises",
       headline: "Real products, built the GeniriFlow way.",
-      subheadline: "Every system below is live and running the same way we'd build yours.",
+      subheadline: "Every system below is real — built the same way we'd build yours, some already live.",
       items: [
         {
           name: "Kesher (geniribot)",
@@ -277,6 +277,27 @@ export const CONTENT: Record<Lang, SectionContent> = {
           name: "Kursim",
           description: "A course platform with real device-limiting anti-sharing and two-layer tenant security.",
           icon: "shield",
+          accent: "electric",
+          cta: "Coming soon",
+        },
+        {
+          name: "Amutot",
+          description: "Multi-tenant nonprofit association management — CSV import, real role hierarchy, per-org branded pages, built-in donations.",
+          icon: "data",
+          accent: "violet",
+          cta: "Coming soon",
+        },
+        {
+          name: "Commons",
+          description: "Community management with a real five-role hierarchy, event waitlists, and per-community membership billing.",
+          icon: "scale",
+          accent: "cyan",
+          cta: "Coming soon",
+        },
+        {
+          name: "MilTech",
+          description: "Reserve-duty management: shift scheduling, leave requests, service-cycle tracking, department rollups.",
+          icon: "lock",
           accent: "electric",
           cta: "Coming soon",
         },
@@ -498,7 +519,7 @@ export const CONTENT: Record<Lang, SectionContent> = {
     products: {
       eyebrow: "הוכחה, לא הבטחות",
       headline: "מוצרים אמיתיים, בנויים בדרך של GeniriFlow.",
-      subheadline: "כל מערכת למטה חיה ופועלת בדיוק באותה הדרך שבה נבנה את שלכם.",
+      subheadline: "כל מערכת למטה אמיתית — נבנתה בדיוק באותה הדרך שבה נבנה את שלכם, וחלקן כבר חיות.",
       items: [
         {
           name: "קשר (geniribot)",
@@ -512,6 +533,27 @@ export const CONTENT: Record<Lang, SectionContent> = {
           name: "Kursim",
           description: "פלטפורמת קורסים עם מכסת מכשירים אמיתית נגד שיתוף, ובידוד דו-שכבתי.",
           icon: "shield",
+          accent: "electric",
+          cta: "בקרוב",
+        },
+        {
+          name: "Amutot",
+          description: "ניהול עמותות רב-דיירי — ייבוא CSV, היררכיית הרשאות אמיתית, דפי נחיתה ממותגים לכל ארגון, תרומות מובנות.",
+          icon: "data",
+          accent: "violet",
+          cta: "בקרוב",
+        },
+        {
+          name: "Commons",
+          description: "ניהול קהילות עם היררכיית חמש דרגות אמיתית, רשימות המתנה לאירועים וחיוב מנוי לכל קהילה בנפרד.",
+          icon: "scale",
+          accent: "cyan",
+          cta: "בקרוב",
+        },
+        {
+          name: "MilTech",
+          description: "ניהול שירות מילואים: שיבוץ משמרות, בקשות חופשה, מעקב מחזורי שירות וריכוז נתונים לפי מסגרת.",
+          icon: "lock",
           accent: "electric",
           cta: "בקרוב",
         },
