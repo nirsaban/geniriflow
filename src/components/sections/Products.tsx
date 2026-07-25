@@ -54,7 +54,7 @@ export function Products() {
               <li
                 key={`${item.name}-${i}`}
                 aria-hidden={isDuplicate}
-                className="w-[85%] shrink-0 sm:w-[360px]"
+                className="w-[85vw] shrink-0 sm:w-[360px]"
               >
                 <Wrapper {...wrapperProps} tabIndex={isDuplicate ? -1 : undefined} className="block h-full">
                   <GlassCard glow={item.accent as "electric" | "cyan" | "violet"} className="h-full">
