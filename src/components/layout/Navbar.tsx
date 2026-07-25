@@ -30,7 +30,11 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "border-b border-white/10 bg-ink-950/70 backdrop-blur-xl"
+          // solid on mobile: backdrop-blur under a fixed, scrolling header
+          // recomposites every scroll frame and was the confirmed cause of
+          // mobile scroll jank on geniribot's landing page — blur only where
+          // that compositing is cheap (desktop).
+          ? "border-b border-white/10 bg-ink-950 md:bg-ink-950/70 md:backdrop-blur-xl"
           : "border-b border-transparent",
       )}
     >
@@ -69,7 +73,7 @@ export function Navbar() {
           <LanguageSwitcher />
           <a
             href="#contact"
-            className="hidden rounded-full border border-white/15 bg-white/5 px-5 py-2 text-sm font-semibold text-white backdrop-blur-md transition-all hover:border-white/30 hover:bg-white/10 sm:inline-block"
+            className="hidden rounded-full border border-white/15 bg-ink-950 px-5 py-2 text-sm font-semibold text-white transition-all hover:border-white/30 hover:bg-white/10 sm:inline-block md:bg-white/5 md:backdrop-blur-md"
           >
             {nav.cta}
           </a>

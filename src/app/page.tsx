@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Problem } from "@/components/sections/Problem";
 import { Transformation } from "@/components/sections/Transformation";
 import { WhatWeBuild } from "@/components/sections/WhatWeBuild";
+import { Products } from "@/components/sections/Products";
 import { ExampleFlow } from "@/components/sections/ExampleFlow";
 import { RevealSequence } from "@/components/sections/RevealSequence";
 import { WhyGeniriFlow } from "@/components/sections/WhyGeniriFlow";
@@ -23,6 +24,7 @@ export default function Home() {
         {/* 2 */} <Problem />
         {/* 3 */} <Transformation />
         {/* 4 */} <WhatWeBuild />
+        {/* — */} <Products />
         {/* 5 */} <ExampleFlow />
         {/* — */} <RevealSequence />
         {/* 6 */} <WhyGeniriFlow />

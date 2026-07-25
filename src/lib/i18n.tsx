@@ -66,7 +66,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1 text-xs font-medium backdrop-blur-md",
+        "inline-flex items-center gap-1 rounded-full border border-white/10 bg-ink-950 p-1 text-xs font-medium md:bg-white/5 md:backdrop-blur-md",
         className,
       )}
       role="group"

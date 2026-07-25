@@ -69,6 +69,19 @@ interface SectionContent {
     subheadline: string;
     items: { title: string; description: string; icon: string; accent: string }[];
   };
+  products: {
+    eyebrow: string;
+    headline: string;
+    subheadline: string;
+    items: {
+      name: string;
+      description: string;
+      icon: string;
+      accent: string;
+      url?: string;
+      cta: string;
+    }[];
+  };
   flow: {
     eyebrow: string;
     headline: string;
@@ -244,6 +257,28 @@ export const CONTENT: Record<Lang, SectionContent> = {
           description: "Real-time visibility and tools that put you back in control.",
           icon: "dashboard",
           accent: "violet",
+        },
+      ],
+    },
+    products: {
+      eyebrow: "Proof, Not Promises",
+      headline: "Real products, built the GeniriFlow way.",
+      subheadline: "Every system below is live and running the same way we'd build yours.",
+      items: [
+        {
+          name: "Kesher (geniribot)",
+          description: "A WhatsApp lead-bot that answers instantly, qualifies, and books straight into your calendar — 24/7.",
+          icon: "whatsapp",
+          accent: "cyan",
+          url: "https://wabot.miltech.cloud",
+          cta: "Visit site",
+        },
+        {
+          name: "Kursim",
+          description: "A course platform with real device-limiting anti-sharing and two-layer tenant security.",
+          icon: "shield",
+          accent: "electric",
+          cta: "Coming soon",
         },
       ],
     },
@@ -457,6 +492,28 @@ export const CONTENT: Record<Lang, SectionContent> = {
           description: "שקיפות בזמן אמת וכלים שמחזירים לכם את השליטה.",
           icon: "dashboard",
           accent: "violet",
+        },
+      ],
+    },
+    products: {
+      eyebrow: "הוכחה, לא הבטחות",
+      headline: "מוצרים אמיתיים, בנויים בדרך של GeniriFlow.",
+      subheadline: "כל מערכת למטה חיה ופועלת בדיוק באותה הדרך שבה נבנה את שלכם.",
+      items: [
+        {
+          name: "קשר (geniribot)",
+          description: "בוט וואטסאפ שעונה מיד, מסנן וקובע פגישה ביומן — 24/7.",
+          icon: "whatsapp",
+          accent: "cyan",
+          url: "https://wabot.miltech.cloud",
+          cta: "לאתר",
+        },
+        {
+          name: "Kursim",
+          description: "פלטפורמת קורסים עם מכסת מכשירים אמיתית נגד שיתוף, ובידוד דו-שכבתי.",
+          icon: "shield",
+          accent: "electric",
+          cta: "בקרוב",
         },
       ],
     },
