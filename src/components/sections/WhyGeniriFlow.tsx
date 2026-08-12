@@ -19,10 +19,10 @@ export function WhyGeniriFlow() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="relative overflow-hidden rounded-4xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl sm:p-12 lg:p-16"
+        className="relative overflow-hidden rounded-4xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur-xl sm:p-12 lg:p-16"
       >
-        <div className="pointer-events-none absolute -end-20 -top-20 h-72 w-72 rounded-full bg-violet/20 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-24 -start-16 h-72 w-72 rounded-full bg-cyan/15 blur-3xl" />
+        <div className="pointer-events-none absolute -end-20 -top-20 h-72 w-72 rounded-full bg-violet/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-24 -start-16 h-72 w-72 rounded-full bg-cyan/[0.08] blur-3xl" />
 
         <div className="relative grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
           {/* headline + proof points */}
@@ -35,7 +35,7 @@ export function WhyGeniriFlow() {
             </motion.span>
             <motion.h2
               variants={fadeUp}
-              className="text-balance font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+              className="text-balance font-display text-3xl font-bold tracking-tight text-white rtl:tracking-normal sm:text-4xl"
             >
               {t.headline}
             </motion.h2>

@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -21,15 +22,27 @@ const ACCENT_CLASSES: Record<string, string> = {
  * `/portfolio-carousel-sync` skill; only products with a real landing page
  * (BUILT or LIVE) belong here.
  *
- * Auto-scrolls as a seamless marquee (the item list is duplicated end-to-end
- * and animated exactly -50%, so the loop point is invisible). Direction is
- * pinned `dir="ltr"` regardless of page locale so the CSS translateX math
- * doesn't invert under RTL's flex-direction flip — motion is decorative, not
- * textual. Pauses on hover/focus and under `prefers-reduced-motion`.
+ * A user-controlled horizontal scroll-snap list (not an auto-scrolling
+ * marquee): the reader drags/scrolls at their own pace, cards snap into
+ * place, and reading direction follows the page's own `dir` automatically.
+ * A vanilla mouse wheel has no horizontal axis, so plain vertical scroll
+ * input over the list is redirected to horizontal — otherwise a mouse (as
+ * opposed to a trackpad/touchscreen) user has no way to move it at all.
  */
 export function Products() {
   const t = useContent().products;
-  const track = [...t.items, ...t.items];
+  const scrollerRef = useRef<HTMLUListElement>(null);
+
+  function handleWheel(e: React.WheelEvent<HTMLUListElement>) {
+    const el = scrollerRef.current;
+    if (!el || Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+    // `behavior: "instant"` matters here: with the container's own
+    // scroll-behavior: smooth, a plain `scrollLeft +=` on every wheel tick
+    // restarts a smooth-scroll animation each time, so rapid ticks cancel
+    // each other out and the list visually never moves.
+    el.scrollBy({ left: e.deltaY, behavior: "instant" });
+    e.preventDefault();
+  }
 
   return (
     <Section id="products">
@@ -40,23 +53,21 @@ export function Products() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.15 }}
         variants={fadeUp}
-        dir="ltr"
-        className="group/marquee relative mt-14 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]"
+        className="relative mt-14"
       >
-        <ul className="flex w-max animate-marquee gap-5 group-hover/marquee:[animation-play-state:paused] group-focus-within/marquee:[animation-play-state:paused] motion-reduce:animate-none">
-          {track.map((item, i) => {
-            const isDuplicate = i >= t.items.length;
+        <ul
+          ref={scrollerRef}
+          onWheel={handleWheel}
+          className="flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
+          {t.items.map((item) => {
             const Wrapper = item.url ? "a" : "div";
             const wrapperProps = item.url
               ? { href: item.url, target: "_blank", rel: "noreferrer" }
               : {};
             return (
-              <li
-                key={`${item.name}-${i}`}
-                aria-hidden={isDuplicate}
-                className="w-[85vw] shrink-0 sm:w-[360px]"
-              >
-                <Wrapper {...wrapperProps} tabIndex={isDuplicate ? -1 : undefined} className="block h-full">
+              <li key={item.name} className="w-[85vw] shrink-0 snap-start sm:w-[360px]">
+                <Wrapper {...wrapperProps} className="block h-full">
                   <GlassCard glow={item.accent as "electric" | "cyan" | "violet"} className="h-full">
                     <div
                       className={`mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl border ${ACCENT_CLASSES[item.accent]}`}

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
+import { PRIMARY_GRADIENT_CLASSES } from "@/components/ui/Button";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 import { BRAND } from "@/lib/content";
@@ -55,16 +56,22 @@ export function Contact() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="relative mx-auto grid max-w-5xl items-center gap-10 overflow-hidden rounded-4xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-6 backdrop-blur-xl sm:p-10 lg:grid-cols-2 lg:gap-14 lg:p-14"
+          className="relative mx-auto grid max-w-5xl items-center gap-10 overflow-hidden rounded-4xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-8 backdrop-blur-xl sm:p-12 lg:grid-cols-2 lg:gap-14 lg:p-16"
         >
           <div className="pointer-events-none absolute -end-24 -top-24 h-64 w-64 rounded-full bg-violet/25 blur-[100px]" />
           <div className="pointer-events-none absolute -bottom-24 -start-16 h-64 w-64 rounded-full bg-cyan/20 blur-[100px]" />
 
           {/* copy side */}
           <div className="relative">
+            <motion.span
+              variants={fadeUp}
+              className="mb-4 inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold tracking-wide text-cyan"
+            >
+              {t.eyebrow}
+            </motion.span>
             <motion.h2
               variants={fadeUp}
-              className="text-balance font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+              className="text-balance font-display text-3xl font-bold tracking-tight text-white rtl:tracking-normal sm:text-4xl"
             >
               {t.headline}
             </motion.h2>
@@ -144,7 +151,10 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="group relative inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-electric via-violet to-cyan bg-[length:200%_100%] px-7 py-3.5 text-sm font-semibold text-white shadow-glow transition-all duration-300 hover:bg-[position:100%_0] hover:shadow-glow-violet disabled:opacity-60 rtl:bg-gradient-to-l"
+                  className={cn(
+                    "group relative inline-flex w-full items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 disabled:opacity-60",
+                    PRIMARY_GRADIENT_CLASSES,
+                  )}
                 >
                   {status === "submitting" ? t.form.submitting : t.form.submit}
                 </button>

@@ -114,6 +114,7 @@ interface SectionContent {
     button: string;
   };
   finalCta: {
+    eyebrow: string;
     headline: string;
     text: string;
     bullets: string[];
@@ -371,6 +372,7 @@ export const CONTENT: Record<Lang, SectionContent> = {
       button: "Start With a Smart Business Audit",
     },
     finalCta: {
+      eyebrow: "Let's Talk",
       headline: "Ready to build your operating system?",
       text: "Leave your details and we'll get back to you with a free smart business audit — no obligation.",
       bullets: [
@@ -631,6 +633,7 @@ export const CONTENT: Record<Lang, SectionContent> = {
       button: "התחל עם שאלון אפיון חכם",
     },
     finalCta: {
+      eyebrow: "בואו נדבר",
       headline: "מוכנים לבנות את מערכת העבודה שלכם?",
       text: "השאירו פרטים ונחזור אליכם עם אבחון עסקי חכם — חינם וללא התחייבות.",
       bullets: [

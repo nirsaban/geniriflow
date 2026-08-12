@@ -64,7 +64,7 @@ export function Hero() {
 
             <motion.h1
               variants={fadeUp}
-              className="text-balance font-display text-4xl font-bold leading-[1.12] tracking-tight text-white sm:text-5xl lg:text-6xl"
+              className="text-balance font-display text-4xl font-bold leading-[1.15] tracking-tight text-white rtl:tracking-normal rtl:leading-[1.25] sm:text-5xl lg:text-6xl"
             >
               {t.headlineLead}
               <span className="bg-gradient-to-r from-cyan via-electric to-violet bg-clip-text text-transparent rtl:bg-gradient-to-l">

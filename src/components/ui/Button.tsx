@@ -2,6 +2,14 @@ import { cn } from "@/lib/utils";
 
 type Variant = "primary" | "secondary";
 
+/**
+ * The primary CTA's gradient/glow treatment, shared with the Contact form's
+ * native <button> (which can't render this component's <a>) so the two never
+ * drift out of sync.
+ */
+export const PRIMARY_GRADIENT_CLASSES =
+  "text-white shadow-glow bg-gradient-to-r from-electric via-violet to-cyan bg-[length:200%_100%] hover:bg-[position:100%_0] hover:shadow-glow-violet rtl:bg-gradient-to-l";
+
 interface ButtonProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: Variant;
@@ -24,8 +32,7 @@ export function Button({
     "group relative inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 will-change-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/70 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950";
 
   const variants: Record<Variant, string> = {
-    primary:
-      "text-white shadow-glow bg-gradient-to-r from-electric via-violet to-cyan bg-[length:200%_100%] hover:bg-[position:100%_0] hover:-translate-y-0.5 hover:shadow-glow-violet",
+    primary: PRIMARY_GRADIENT_CLASSES,
     secondary:
       "text-slate-100 border border-white/15 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:-translate-y-0.5 hover:border-white/25",
   };

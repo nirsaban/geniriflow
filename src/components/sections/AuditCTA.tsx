@@ -28,7 +28,7 @@ export function AuditCTA() {
           </motion.span>
           <motion.h2
             variants={fadeUp}
-            className="relative text-balance font-display text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl"
+            className="relative text-balance font-display text-2xl font-bold tracking-tight text-white rtl:tracking-normal sm:text-3xl md:text-4xl"
           >
             {t.headline}
           </motion.h2>

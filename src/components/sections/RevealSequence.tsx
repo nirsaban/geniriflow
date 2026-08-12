@@ -7,7 +7,8 @@ import { FLOW_FRAMES } from "@/lib/content";
 /**
  * Standalone, full-width cinematic reveal. The frames2 sequence plays on its
  * own as a pinned, scroll-scrubbed full-bleed section — no overlaid content.
- * A long scroll track makes the animation play over a generous scroll distance.
+ * Kept deliberately shorter than the Hero's track: this is a brief accent
+ * beat, not a second hero-scale moment competing with the opening one.
  */
 export function RevealSequence() {
   const trackRef = useRef<HTMLElement>(null);
@@ -17,7 +18,7 @@ export function RevealSequence() {
     <section
       ref={trackRef}
       aria-hidden="true"
-      className="relative h-[100svh] w-full md:h-[800vh]"
+      className="relative h-[100svh] w-full md:h-[300vh]"
     >
       <div className="relative h-[100svh] w-full overflow-hidden md:sticky md:top-0 md:h-screen">
         <ScrollFrameSequence

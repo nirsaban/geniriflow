@@ -40,7 +40,7 @@ export function SectionHeading({
       )}
       <motion.h2
         variants={fadeUp}
-        className="text-balance font-display text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl"
+        className="text-balance font-display text-3xl font-bold tracking-tight text-white rtl:tracking-normal sm:text-4xl md:text-5xl"
       >
         {title}
       </motion.h2>

@@ -24,7 +24,7 @@ export function Problem() {
         {t.items.map((item) => (
           <motion.li key={item.title} variants={fadeUp}>
             <GlassCard className="h-full">
-              <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-rose-500/10 text-rose-300">
+              <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-rose-500/10 text-rose-300">
                 <Icon name={item.icon as IconName} className="h-5 w-5" />
               </div>
               <h3 className="text-lg font-semibold text-white">{item.title}</h3>

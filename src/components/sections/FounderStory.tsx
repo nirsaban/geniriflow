@@ -49,7 +49,7 @@ export function FounderStory() {
           </motion.span>
           <motion.h2
             variants={fadeUp}
-            className="text-balance font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            className="text-balance font-display text-3xl font-bold tracking-tight text-white rtl:tracking-normal sm:text-4xl"
           >
             {t.headline}
           </motion.h2>
