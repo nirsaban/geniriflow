@@ -46,7 +46,10 @@ function SitePreview({ url }: { url: string }) {
         loading="lazy"
         sandbox="allow-same-origin"
         scrolling="no"
-        className="absolute top-0 h-[400%] w-[400%] origin-top-left border-0 bg-transparent [inset-inline-start:0]"
+        // Physical left anchoring on purpose: transform-origin "top left" is
+        // physical too, so a logical inset-inline-start would push the scaled
+        // content fully out of view on the RTL side of the site.
+        className="absolute left-0 top-0 h-[400%] w-[400%] origin-top-left border-0 bg-transparent"
         style={{ transform: "scale(0.25)" }}
       />
     </div>
