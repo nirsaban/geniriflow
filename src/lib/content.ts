@@ -264,11 +264,11 @@ export const CONTENT: Record<Lang, SectionContent> = {
     products: {
       eyebrow: "Proof, Not Promises",
       headline: "Real products, built the GeniriFlow way.",
-      subheadline: "Every system below is live and running the same way we'd build yours.",
+      subheadline: "Not mockups. Systems we built end to end, running for real people right now.",
       items: [
         {
           name: "Kesher (geniribot)",
-          description: "A WhatsApp lead-bot that answers instantly, qualifies, and books straight into your calendar — 24/7.",
+          description: "Answers every WhatsApp lead in seconds, asks the right questions, and books the meeting into your calendar. Even at 2am.",
           icon: "whatsapp",
           accent: "cyan",
           url: "https://wabot.miltech.cloud",
@@ -276,7 +276,7 @@ export const CONTENT: Record<Lang, SectionContent> = {
         },
         {
           name: "Kursim",
-          description: "A course platform with real device-limiting anti-sharing and two-layer tenant security.",
+          description: "A course platform that actually stops password sharing: device limits, instant kick, and your revenue stays yours.",
           icon: "shield",
           accent: "electric",
           url: "https://kursim.miltech.cloud",
@@ -284,7 +284,7 @@ export const CONTENT: Record<Lang, SectionContent> = {
         },
         {
           name: "Amutot",
-          description: "Multi-tenant nonprofit association management — CSV import, real role hierarchy, per-org branded pages, built-in donations.",
+          description: "Runs an Israeli nonprofit end to end: members, roles, branded pages, donations. It even imports the Excel you already have.",
           icon: "data",
           accent: "violet",
           url: "https://amutot.miltech.cloud/about",
@@ -292,7 +292,7 @@ export const CONTENT: Record<Lang, SectionContent> = {
         },
         {
           name: "Commons",
-          description: "Community management with a real five-role hierarchy, event waitlists, and per-community membership billing.",
+          description: "Community management that isn't just another group chat: five role levels, event waitlists, and billing per community.",
           icon: "scale",
           accent: "cyan",
           url: "https://comunix.miltech.cloud/about",
@@ -300,10 +300,18 @@ export const CONTENT: Record<Lang, SectionContent> = {
         },
         {
           name: "MilTech",
-          description: "Reserve-duty management: shift scheduling, leave requests, service-cycle tracking, department rollups.",
+          description: "Keeps a reserve unit organized: shifts, leave requests, service cycles, and one clear picture for the whole department.",
           icon: "lock",
           accent: "electric",
           url: "https://miltech.cloud/about",
+          cta: "Visit site",
+        },
+        {
+          name: "Pakahim",
+          description: "Built for Israel Railways inspectors who used to dig through an emailed Excel to find their shift. Now they log in and see it.",
+          icon: "clock",
+          accent: "violet",
+          url: "https://pakahim.miltech.cloud/about",
           cta: "Visit site",
         },
       ],
@@ -525,11 +533,11 @@ export const CONTENT: Record<Lang, SectionContent> = {
     products: {
       eyebrow: "הוכחה, לא הבטחות",
       headline: "מוצרים אמיתיים, בנויים בדרך של GeniriFlow.",
-      subheadline: "כל מערכת למטה חיה ופועלת בדיוק באותה הדרך שבה נבנה את שלכם.",
+      subheadline: "לא הדמיות. מערכות שבנינו מקצה לקצה, ורצות עכשיו אצל אנשים אמיתיים.",
       items: [
         {
           name: "קשר (geniribot)",
-          description: "בוט וואטסאפ שעונה מיד, מסנן וקובע פגישה ביומן — 24/7.",
+          description: "עונה לכל ליד בוואטסאפ תוך שניות, שואל את השאלות הנכונות וקובע פגישה ביומן. גם בשתיים בלילה.",
           icon: "whatsapp",
           accent: "cyan",
           url: "https://wabot.miltech.cloud",
@@ -537,7 +545,7 @@ export const CONTENT: Record<Lang, SectionContent> = {
         },
         {
           name: "Kursim",
-          description: "פלטפורמת קורסים עם מכסת מכשירים אמיתית נגד שיתוף, ובידוד דו-שכבתי.",
+          description: "פלטפורמת קורסים שבאמת עוצרת שיתוף סיסמאות: הגבלת מכשירים, ניתוק מיידי, וההכנסות נשארות שלכם.",
           icon: "shield",
           accent: "electric",
           url: "https://kursim.miltech.cloud",
@@ -545,7 +553,7 @@ export const CONTENT: Record<Lang, SectionContent> = {
         },
         {
           name: "Amutot",
-          description: "ניהול עמותות רב-דיירי — ייבוא CSV, היררכיית הרשאות אמיתית, דפי נחיתה ממותגים לכל ארגון, תרומות מובנות.",
+          description: "מנהלת עמותה מקצה לקצה: חברים, הרשאות, דפים ממותגים ותרומות. אפילו את האקסל הקיים שלכם היא יודעת לייבא.",
           icon: "data",
           accent: "violet",
           url: "https://amutot.miltech.cloud/about",
@@ -553,7 +561,7 @@ export const CONTENT: Record<Lang, SectionContent> = {
         },
         {
           name: "Commons",
-          description: "ניהול קהילות עם היררכיית חמש דרגות אמיתית, רשימות המתנה לאירועים וחיוב מנוי לכל קהילה בנפרד.",
+          description: "ניהול קהילה שהוא לא עוד קבוצת וואטסאפ: חמש דרגות הרשאה, רשימות המתנה לאירועים וגבייה לכל קהילה בנפרד.",
           icon: "scale",
           accent: "cyan",
           url: "https://comunix.miltech.cloud/about",
@@ -561,10 +569,18 @@ export const CONTENT: Record<Lang, SectionContent> = {
         },
         {
           name: "MilTech",
-          description: "ניהול שירות מילואים: שיבוץ משמרות, בקשות חופשה, מעקב מחזורי שירות וריכוז נתונים לפי מסגרת.",
+          description: "שומרת על פלוגת מילואים מסודרת: משמרות, בקשות חופשה, מחזורי שירות ותמונה אחת ברורה לכל המסגרת.",
           icon: "lock",
           accent: "electric",
           url: "https://miltech.cloud/about",
+          cta: "לאתר",
+        },
+        {
+          name: "Pakahim",
+          description: "נבנתה לפקחי רכבת ישראל שחיפשו את עצמם כל בוקר באקסל. עכשיו הם נכנסים ורואים את המשמרת. זהו.",
+          icon: "clock",
+          accent: "violet",
+          url: "https://pakahim.miltech.cloud/about",
           cta: "לאתר",
         },
       ],

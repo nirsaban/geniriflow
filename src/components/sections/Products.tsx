@@ -16,11 +16,42 @@ const ACCENT_CLASSES: Record<string, string> = {
 };
 
 /**
+ * Live preview of the product's real landing page, scaled down inside the
+ * card. The iframe is rendered at 4x the card's width and scaled to 25%, so
+ * the framed site lays itself out at a desktop-ish viewport regardless of the
+ * card's responsive width. It is purely decorative: no keyboard focus, no
+ * pointer events (clicks fall through to the card's own link), lazy-loaded so
+ * five embedded sites don't compete with this page's own first paint.
+ *
+ * NOTE: the framed sites must allow being embedded by this origin (no
+ * X-Frame-Options: SAMEORIGIN / restrictive frame-ancestors), otherwise the
+ * browser shows a refused-to-connect error inside the frame.
+ */
+function SitePreview({ url }: { url: string }) {
+  return (
+    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+      <iframe
+        src={url}
+        title=""
+        tabIndex={-1}
+        loading="lazy"
+        sandbox="allow-scripts allow-same-origin"
+        scrolling="no"
+        className="absolute top-0 h-[400%] w-[400%] origin-top-left border-0 bg-transparent [inset-inline-start:0]"
+        style={{ transform: "scale(0.25)" }}
+      />
+    </div>
+  );
+}
+
+/**
  * Showcases real, built products from the GeniriFlow portfolio — proof of
  * what "smart business systems" actually looks like when shipped. Kept in
  * sync with control-room's tracked landing pages by the
  * `/portfolio-carousel-sync` skill; only products with a real landing page
- * (BUILT or LIVE) belong here.
+ * (BUILT or LIVE) belong here. Deployed products embed their live site as a
+ * scaled-down preview; not-yet-deployed ones show their icon instead and
+ * carry an "in progress" label rather than a link that would 404.
  *
  * A user-controlled horizontal scroll-snap list (not an auto-scrolling
  * marquee): the reader drags/scrolls at their own pace, cards snap into
@@ -69,12 +100,31 @@ export function Products() {
               <li key={item.name} className="w-[85vw] shrink-0 snap-start sm:w-[360px]">
                 <Wrapper {...wrapperProps} className="block h-full">
                   <GlassCard glow={item.accent as "electric" | "cyan" | "violet"} className="h-full">
-                    <div
-                      className={`mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl border ${ACCENT_CLASSES[item.accent]}`}
-                    >
-                      <Icon name={item.icon as IconName} />
+                    {/* Preview window, bleeding to the card's edges */}
+                    <div className="relative -mx-6 -mt-6 mb-5 h-44 overflow-hidden border-b border-white/10 bg-white/[0.03]">
+                      {/* Icon fallback: the base layer for not-yet-deployed
+                          products, and what shows behind a preview that has
+                          not painted yet. */}
+                      <div
+                        className={`absolute inset-0 flex items-center justify-center ${item.url ? "" : "opacity-90"}`}
+                      >
+                        <span
+                          className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl border ${ACCENT_CLASSES[item.accent]}`}
+                        >
+                          <Icon name={item.icon as IconName} />
+                        </span>
+                      </div>
+                      {item.url && <SitePreview url={item.url} />}
                     </div>
-                    <h3 className="text-lg font-semibold text-white">{item.name}</h3>
+
+                    <div className="flex items-center gap-2.5">
+                      <span
+                        className={`inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border ${ACCENT_CLASSES[item.accent]}`}
+                      >
+                        <Icon name={item.icon as IconName} className="h-4 w-4" />
+                      </span>
+                      <h3 className="text-lg font-semibold text-white">{item.name}</h3>
+                    </div>
                     <p className="mt-2 text-sm leading-relaxed text-slate-400">{item.description}</p>
                     <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-slate-300 group-hover:text-white">
                       {item.cta}
