@@ -21,11 +21,20 @@ const ACCENT_CLASSES: Record<string, string> = {
  * the framed site lays itself out at a desktop-ish viewport regardless of the
  * card's responsive width. It is purely decorative: no keyboard focus, no
  * pointer events (clicks fall through to the card's own link), lazy-loaded so
- * five embedded sites don't compete with this page's own first paint.
+ * the embedded sites don't compete with this page's own first paint.
  *
- * NOTE: the framed sites must allow being embedded by this origin (no
- * X-Frame-Options: SAMEORIGIN / restrictive frame-ancestors), otherwise the
- * browser shows a refused-to-connect error inside the frame.
+ * The sandbox deliberately has NO allow-scripts: six hydrating Next.js apps
+ * measurably froze this page's main thread, and a scripted frame can also
+ * steal focus/scroll from the parent. All the framed pages render their full
+ * content from SSR alone (verified: no framer-motion opacity-0 inline styles
+ * in their HTML), so scriptless frames still show the real site — animations
+ * just don't play inside the thumbnail, which is fine for a preview.
+ *
+ * NOTE: the framed sites must allow being embedded by this origin — the
+ * shared yogev-nginx proxy sends
+ * `Content-Security-Policy: frame-ancestors 'self' https://geniriflow.miltech.cloud`
+ * for exactly this reason. Sites that refuse render as an empty/blocked frame
+ * and the icon fallback behind it shows instead.
  */
 function SitePreview({ url }: { url: string }) {
   return (
@@ -35,7 +44,7 @@ function SitePreview({ url }: { url: string }) {
         title=""
         tabIndex={-1}
         loading="lazy"
-        sandbox="allow-scripts allow-same-origin"
+        sandbox="allow-same-origin"
         scrolling="no"
         className="absolute top-0 h-[400%] w-[400%] origin-top-left border-0 bg-transparent [inset-inline-start:0]"
         style={{ transform: "scale(0.25)" }}
