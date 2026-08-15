@@ -16,15 +16,6 @@ const ACCENT_CLASSES: Record<string, string> = {
 };
 
 /**
- * Sites that ship an empty HTML shell and paint everything from JavaScript.
- * The preview frame runs without scripts (see SitePreview), so these would
- * render as a blank rectangle — worse than no preview at all. They fall back
- * to the icon instead. Only add a host here after checking its HTML: if
- * `curl <url>` returns the real copy, it previews fine.
- */
-const CLIENT_RENDERED_HOSTS = new Set(["comunix.miltech.cloud"]);
-
-/**
  * Live preview of the product's real landing page, scaled down inside the
  * card. The iframe is rendered at 4x the card's width and scaled to 25%, so
  * the framed site lays itself out at a desktop-ish viewport regardless of the
@@ -39,20 +30,17 @@ const CLIENT_RENDERED_HOSTS = new Set(["comunix.miltech.cloud"]);
  * in their HTML), so scriptless frames still show the real site — animations
  * just don't play inside the thumbnail, which is fine for a preview.
  *
+ * A framed site therefore has to serve its content in the HTML itself. That
+ * is a real constraint on the product sites, not an accident: Commons is a
+ * client-rendered SPA and had to start prerendering its /about page before it
+ * could appear here at all.
+ *
  * NOTE: the framed sites must allow being embedded by this origin — the
  * shared yogev-nginx proxy sends
  * `Content-Security-Policy: frame-ancestors 'self' https://geniriflow.miltech.cloud`
  * for exactly this reason. Sites that refuse render as an empty/blocked frame
  * and the icon fallback behind it shows instead.
  */
-function canPreview(url: string) {
-  try {
-    return !CLIENT_RENDERED_HOSTS.has(new URL(url).hostname);
-  } catch {
-    return false;
-  }
-}
-
 function SitePreview({ url }: { url: string }) {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
@@ -132,8 +120,8 @@ export function Products() {
                     {/* Preview window, bleeding to the card's edges */}
                     <div className="relative -mx-6 -mt-6 mb-5 h-44 overflow-hidden border-b border-white/10 bg-white/[0.03]">
                       {/* Icon fallback: the base layer for not-yet-deployed
-                          products and client-rendered ones, and what shows
-                          behind a preview that has not painted yet. */}
+                          products, and what shows behind a preview that has
+                          not painted yet. */}
                       <div
                         className={`absolute inset-0 flex items-center justify-center ${item.url ? "" : "opacity-90"}`}
                       >
@@ -143,7 +131,7 @@ export function Products() {
                           <Icon name={item.icon as IconName} />
                         </span>
                       </div>
-                      {item.url && canPreview(item.url) && <SitePreview url={item.url} />}
+                      {item.url && <SitePreview url={item.url} />}
                     </div>
 
                     <div className="flex items-center gap-2.5">
