@@ -17,9 +17,11 @@ const rubik = Rubik({
   display: "swap",
 });
 
-const title = `${BRAND.name} — מערכות עסקיות חכמות ותוכנה מותאמת אישית`;
+const title = `${BRAND.name} — מערכות עסקיות ותוכנה מותאמת אישית`;
+// Written to read like a sentence a person would say, while still carrying the
+// terms people actually search for (מערכות עסקיות, אוטומציות, דאשבורדים).
 const description =
-  "GeniriFlow מאפיינת ובונה מערכות עסקיות חכמות, תוכנה מותאמת אישית, תהליכי AI, אוטומציות ודאשבורדים — והופכת תפעול מבולגן למערכות מסודרות, אוטומטיות ומוכנות לצמיחה.";
+  "אנחנו בונים את התוכנה שמחליפה את האקסלים, את ההעתק-הדבק ואת העבודה הידנית: מערכות עסקיות, אוטומציות, סוכני AI ודאשבורדים לעסקים שכבר גדולים מדי בשביל הכלים שהתחילו איתם.";
 
 export const metadata: Metadata = {
   // TODO: set to the real production domain (resolves OG/Twitter image URLs).
