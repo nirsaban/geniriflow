@@ -170,6 +170,40 @@ webhook. Submissions include: name, phone, business, message.
 
 ---
 
+## Digital invitations — `/invitation/<slug>`
+
+A second product living in the same app: a shareable, mobile-first **הזמנה
+דיגיטלית** (wedding / bar mitzvah / birthday), Hebrew and RTL throughout.
+
+What a guest gets: a tap-to-open envelope, the names and date, a live countdown,
+the evening's schedule, the venue with **Waze / Google Maps / add-to-calendar**
+(`.ics`), an RSVP form with a WhatsApp fallback, an optional looping soundtrack,
+and a share button. Petals fall behind it all — and stop entirely under
+`prefers-reduced-motion`.
+
+Everything one invitation shows comes from **one object** in
+`src/lib/invitation.ts`, keyed by its URL slug, so a new client is a data edit
+rather than a new page: names, parents, dates, schedule, venue (with lat/lng for
+the map links), RSVP phone, and a six-colour palette. Two are shipped as
+references — `/invitation/demo` (ivory wedding) and `/invitation/bar-mitzvah`
+(midnight + gold).
+
+| Piece | Where |
+| ----- | ----- |
+| Data + demo content | `src/lib/invitation.ts` |
+| Page + OG metadata (`noindex`) | `src/app/invitation/[slug]/page.tsx` |
+| Serif display face (Frank Ruhl Libre) | `src/app/invitation/layout.tsx` |
+| Components | `src/components/invitation/*` |
+| `.ics` calendar file | `src/app/api/invitation/[slug]/calendar/route.ts` |
+| RSVP endpoint | `src/app/api/rsvp/route.ts` |
+
+**Before going live:** `/api/rsvp` currently validates and logs the answer —
+point it at the real destination (Google Sheet, CRM, or a WhatsApp message to
+the hosts), and replace `rsvpPhone` with the client's number. Background music
+is off until `music.src` points at a track in `public/`.
+
+---
+
 ## Performance & accessibility
 
 - **Code-split 3D** via `next/dynamic({ ssr: false })` — three.js loads as a
