@@ -2588,5 +2588,12 @@
   "op": "render poc",
   "units": 336,
   "usd": 0
+ },
+ {
+  "ts": "2026-10-11T17:10:17.947Z",
+  "provider": "local:remotion",
+  "op": "render movie",
+  "units": 5613,
+  "usd": 0
  }
 ]

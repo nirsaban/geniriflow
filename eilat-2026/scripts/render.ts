@@ -74,6 +74,11 @@ async function renderVideo(serveUrl: string, id: string, file: string, opts: { s
 }
 
 async function main() {
+  if (mode === 'trailer') {
+    // the trailer cuts from the rendered film; it must be in the public dir before bundling
+    mkdirSync(join(ROOT, 'assets', 'render'), { recursive: true });
+    copyFileSync(join(OUT, 'movie-final.mp4'), join(ROOT, 'assets', 'render', 'movie-final.mp4'));
+  }
   const serveUrl = await getBundle();
   switch (mode) {
     case 'sheets': {
@@ -114,8 +119,7 @@ async function main() {
     }
     case 'trailer': {
       if (!existsSync(join(OUT, 'movie-final.mp4'))) throw new Error('render the movie first');
-      mkdirSync(join(ROOT, 'assets', 'render'), { recursive: true });
-      copyFileSync(join(OUT, 'movie-final.mp4'), join(ROOT, 'assets', 'render', 'movie-final.mp4'));
+
       await renderVideo(serveUrl, 'trailer', join(OUT, 'trailer-vertical.mp4'));
       break;
     }
