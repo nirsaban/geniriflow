@@ -67,13 +67,15 @@ export const Trailer: React.FC = () => {
           </div>
         </AbsoluteFill>
       </Sequence>
-      {/* persistent top title */}
+      {/* persistent top title (hidden on the end card) */}
+      <Sequence from={0} durationInFrames={at}>
       <div dir="rtl" style={{ position: 'absolute', top: 150, width: '100%', textAlign: 'center', fontFamily: FONT_TITLE, fontSize: 120, color: '#ffcf3a', textShadow: '0 8px 0 #000' }}>
         אילת 2026
       </div>
       <div dir="rtl" style={{ position: 'absolute', top: 310, width: '100%', textAlign: 'center', fontFamily: FONT_UI, fontWeight: 800, fontSize: 52, color: '#fff', textShadow: '0 4px 0 #000' }}>
         שלושה מטומטמים, אפס נייר טואלט
       </div>
+      </Sequence>
     </AbsoluteFill>
   );
 };
