@@ -1,6 +1,6 @@
 // 9:16 vertical trailer cut from the rendered film (assets/render/movie-final.mp4).
 import React from 'react';
-import { AbsoluteFill, OffthreadVideo, Sequence, staticFile, useCurrentFrame, interpolate } from 'remotion';
+import { AbsoluteFill, Audio, OffthreadVideo, Sequence, staticFile, useCurrentFrame, interpolate } from 'remotion';
 import { ITEMS, FPS } from '../lib/timeline';
 import { FONT_TITLE, FONT_UI } from '../fonts';
 
@@ -10,10 +10,13 @@ const SEGS: Seg[] = [
   { from: 's01_l3', to: 's01_l4', caption: 'שלושה חברים.' },
   { from: 's03_l1', to: 's03_l2', caption: 'מזגן אחד מסריח.' },
   { from: 's03_l5', to: 's04_tick', caption: 'אפס נייר טואלט.' },
+  { from: 's02_l3', to: 's02_l4', caption: 'יום עבודה רגיל.' },
   { from: 's04_gong', to: 's04_l1', caption: 'ומסורת אחת קדושה.' },
   { from: 's04_bow', to: 's04_choir', caption: 'כל שעתיים. בדיוק.' },
   { from: 's05_l8', to: 's05_l9', caption: 'רואי מנסה.' },
   { from: 's07_smash', to: 's07_n1', caption: 'רואי נכשל.' },
+  { from: 's06_l4', to: 's06_l5', caption: 'עוד חירום.' },
+  { from: 's08_cave', to: 's08_l4', caption: 'ההיסטוריה תשפוט.' },
   { from: 's09_l1', to: 's09_l3', caption: 'ניר משלם.' },
   { from: 's12_rain', to: 's12_run', caption: 'אילת לא שיתפה פעולה.' },
   { from: 's13_screams', to: 's13_l2', caption: 'קוד חום.' },
@@ -54,6 +57,8 @@ export const Trailer: React.FC = () => {
         );
       })}
       <Sequence from={at} durationInFrames={END_CARD}>
+        <Audio src={staticFile('music/theme.wav')} volume={(f) => interpolate(f, [0, 6, END_CARD - 12, END_CARD], [0, 0.7, 0.7, 0])} />
+        <Audio src={staticFile('sfx/gong.wav')} volume={0.5} />
         <AbsoluteFill style={{ background: '#ffcf3a', justifyContent: 'center', alignItems: 'center' }}>
           <div dir="rtl" style={{ fontFamily: FONT_TITLE, fontSize: 170, color: '#fff', WebkitTextStroke: '10px #16141a', paintOrder: 'stroke' }}>אילת 2026</div>
           <div dir="rtl" style={{ fontFamily: FONT_TITLE, fontSize: 72, color: '#e02424', marginTop: 20, textAlign: 'center' }}>שלושה מטומטמים,<br />אפס נייר טואלט</div>

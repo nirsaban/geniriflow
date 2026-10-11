@@ -34,7 +34,8 @@ function validateVideo(label: string, file: string, spec: { w: number; h: number
     check(`${label}: Hebrew subtitle track muxed`, !!s && s.tags?.language === 'heb', s ? `${s.codec_name} ${s.tags?.language}` : 'none');
   }
   const black = [...ffLog(file, 'blackdetect=d=1.2:pix_th=0.06').matchAll(/black_start:([\d.]+) black_end:([\d.]+) black_duration:([\d.]+)/g)].map((m) => ({ start: +m[1], dur: +m[3] }));
-  check(`${label}: no unintended black segments (>1.2s)`, black.length === 0, black.length ? JSON.stringify(black) : 'none');
+  const unintendedBlack = black.filter((x) => spec.quietFrom === undefined || x.start < spec.quietFrom);
+  check(`${label}: no unintended black segments (>1.2s; post-credits black is scripted)`, unintendedBlack.length === 0, black.length ? JSON.stringify(black) : 'none');
   const freezes = [...ffLog(file, 'freezedetect=n=0.001:d=6').matchAll(/freeze_start: ([\d.]+)[\s\S]*?freeze_duration: ([\d.]+)/g)].map((m) => ({ start: +m[1], dur: +m[2] }));
   check(`${label}: no frozen video longer than 6s`, freezes.length === 0, freezes.length ? JSON.stringify(freezes) : 'none');
   const vol = ffLog(file, 'volumedetect', true);
