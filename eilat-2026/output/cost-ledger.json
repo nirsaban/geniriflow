@@ -2595,5 +2595,26 @@
   "op": "render movie",
   "units": 5613,
   "usd": 0
+ },
+ {
+  "ts": "2026-10-11T17:19:25.112Z",
+  "provider": "local:remotion",
+  "op": "render trailer",
+  "units": 967,
+  "usd": 0
+ },
+ {
+  "ts": "2026-10-11T17:31:00.875Z",
+  "provider": "local:remotion",
+  "op": "render trailer",
+  "units": 1187,
+  "usd": 0
+ },
+ {
+  "ts": "2026-10-11T17:42:43.446Z",
+  "provider": "local:remotion",
+  "op": "render trailer",
+  "units": 1187,
+  "usd": 0
  }
 ]
