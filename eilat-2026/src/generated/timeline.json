@@ -1,0 +1,2183 @@
+{
+ "fps": 24,
+ "total": 5613,
+ "scenes": [
+  {
+   "id": "s01",
+   "n": 1,
+   "title": "הפלישה",
+   "location": "דירה של ניר — 2:00 בלילה",
+   "from": 0,
+   "dur": 485,
+   "items": [
+    {
+     "id": "s01_sleep",
+     "kind": "beat",
+     "from": 0,
+     "dur": 34,
+     "label": "Dark apartment, Nir snoring",
+     "sfx": [
+      {
+       "s": "snore",
+       "at": 0,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s01_bang",
+     "kind": "beat",
+     "from": 34,
+     "dur": 29,
+     "label": "BAM BAM BAM on the door",
+     "sfx": [
+      {
+       "s": "knock",
+       "at": 34,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s01_l1",
+     "kind": "line",
+     "from": 63,
+     "dur": 37,
+     "speechDur": 35,
+     "who": "roee",
+     "he": "סבןןן! יא בן זונה, פתח!",
+     "sfx": [
+      {
+       "s": "knock",
+       "at": 85,
+       "vol": 0.6
+      }
+     ]
+    },
+    {
+     "id": "s01_l2",
+     "kind": "line",
+     "from": 100,
+     "dur": 30,
+     "speechDur": 28,
+     "who": "nir",
+     "he": "מה קרה?! מלחמה?!",
+     "sfx": []
+    },
+    {
+     "id": "s01_l3",
+     "kind": "line",
+     "from": 130,
+     "dur": 48,
+     "speechDur": 46,
+     "who": "marom",
+     "he": "יותר גרוע. אנחנו נוסעים לאילת!",
+     "sfx": []
+    },
+    {
+     "id": "s01_l4",
+     "kind": "line",
+     "from": 178,
+     "dur": 46,
+     "speechDur": 44,
+     "who": "nir",
+     "he": "השעה שתיים בלילה, יא חולי נפש!",
+     "sfx": []
+    },
+    {
+     "id": "s01_l5",
+     "kind": "line",
+     "from": 224,
+     "dur": 32,
+     "speechDur": 30,
+     "who": "roee",
+     "he": "אחי, אנחנו כבר עם התיקים!",
+     "sfx": []
+    },
+    {
+     "id": "s01_l6",
+     "kind": "line",
+     "from": 256,
+     "dur": 21,
+     "speechDur": 19,
+     "who": "nir",
+     "he": "אני עובד מחר!",
+     "sfx": []
+    },
+    {
+     "id": "s01_l7",
+     "kind": "line",
+     "from": 277,
+     "dur": 35,
+     "speechDur": 30,
+     "who": "marom",
+     "he": "יש לך מחשב, לא?",
+     "sfx": []
+    },
+    {
+     "id": "s01_freeze",
+     "kind": "beat",
+     "from": 312,
+     "dur": 12,
+     "label": "FREEZE FRAME",
+     "sfx": [
+      {
+       "s": "scratch",
+       "at": 312,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s01_n1",
+     "kind": "line",
+     "from": 324,
+     "dur": 84,
+     "speechDur": 77,
+     "who": "narr",
+     "he": "וככה התחיל סופ״ש שהיה צריך להיגמר בצו הרחקה.",
+     "sfx": []
+    },
+    {
+     "id": "s01_title",
+     "kind": "beat",
+     "from": 408,
+     "dur": 77,
+     "label": "TITLE CARD",
+     "sfx": [
+      {
+       "s": "sting",
+       "at": 408,
+       "vol": 1
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "theme",
+     "vol": 0.55,
+     "from": 408,
+     "to": 485
+    }
+   ],
+   "ambience": [
+    {
+     "track": "night",
+     "vol": 0.25
+    }
+   ],
+   "timer": {
+    "start": 0,
+    "end": 0
+   }
+  },
+  {
+   "id": "s02",
+   "n": 2,
+   "title": "הנסיעה",
+   "location": "כביש 90 — בוקר",
+   "from": 485,
+   "dur": 309,
+   "items": [
+    {
+     "id": "s02_drive",
+     "kind": "beat",
+     "from": 485,
+     "dur": 31,
+     "label": "Car speeds through the desert",
+     "sfx": [
+      {
+       "s": "whoosh",
+       "at": 485,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s02_sing",
+     "kind": "line",
+     "from": 516,
+     "dur": 50,
+     "speechDur": 48,
+     "who": "roee",
+     "he": "אילת, אילת, לה לה לה!",
+     "sfx": []
+    },
+    {
+     "id": "s02_l1",
+     "kind": "line",
+     "from": 566,
+     "dur": 22,
+     "speechDur": 20,
+     "who": "manager",
+     "he": "ניר, אתה איתנו?",
+     "sfx": []
+    },
+    {
+     "id": "s02_l2",
+     "kind": "line",
+     "from": 588,
+     "dur": 38,
+     "speechDur": 36,
+     "who": "nir",
+     "he": "כן, ברור, אני עובד מהבית.",
+     "sfx": []
+    },
+    {
+     "id": "s02_l3",
+     "kind": "line",
+     "from": 626,
+     "dur": 33,
+     "speechDur": 31,
+     "who": "roee",
+     "he": "אילתתת! יא בני זונות!",
+     "sfx": []
+    },
+    {
+     "id": "s02_mute",
+     "kind": "beat",
+     "from": 659,
+     "dur": 14,
+     "label": "Nir slams mute",
+     "sfx": [
+      {
+       "s": "click",
+       "at": 659,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s02_l4",
+     "kind": "line",
+     "from": 673,
+     "dur": 28,
+     "speechDur": 21,
+     "who": "nir",
+     "he": "אני אהרוג אתכם.",
+     "sfx": []
+    },
+    {
+     "id": "s02_n1",
+     "kind": "line",
+     "from": 701,
+     "dur": 93,
+     "speechDur": 83,
+     "who": "narr",
+     "he": "שלוש שעות עבודה, אפס שורות קוד, ומאה אחוז סיכוי לפיטורים.",
+     "sfx": []
+    }
+   ],
+   "music": [
+    {
+     "track": "drive",
+     "vol": 0.4,
+     "from": 485,
+     "to": 794
+    }
+   ],
+   "ambience": [
+    {
+     "track": "engine",
+     "vol": 0.35
+    }
+   ],
+   "timer": {
+    "start": 0,
+    "end": 0
+   }
+  },
+  {
+   "id": "s03",
+   "n": 3,
+   "title": "הדירה",
+   "location": "דירה באילת — צהריים",
+   "from": 794,
+   "dur": 348,
+   "items": [
+    {
+     "id": "s03_enter",
+     "kind": "beat",
+     "from": 794,
+     "dur": 43,
+     "label": "Door kicks open, suitcases fly, bottles pop",
+     "sfx": [
+      {
+       "s": "slam",
+       "at": 794,
+       "vol": 0.6
+      },
+      {
+       "s": "whoosh",
+       "at": 804,
+       "vol": 1
+      },
+      {
+       "s": "bonk",
+       "at": 816,
+       "vol": 1
+      },
+      {
+       "s": "pop",
+       "at": 825,
+       "vol": 1
+      },
+      {
+       "s": "pop",
+       "at": 832,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s03_l1",
+     "kind": "line",
+     "from": 837,
+     "dur": 44,
+     "speechDur": 42,
+     "who": "marom",
+     "he": "מה זה המזגן המסריח הזה?!",
+     "sfx": []
+    },
+    {
+     "id": "s03_l2",
+     "kind": "line",
+     "from": 881,
+     "dur": 49,
+     "speechDur": 47,
+     "who": "nir",
+     "he": "מה אתה רוצה? הגענו לפני שלושים שניות!",
+     "sfx": []
+    },
+    {
+     "id": "s03_l3",
+     "kind": "line",
+     "from": 930,
+     "dur": 58,
+     "speechDur": 56,
+     "who": "marom",
+     "he": "בחוץ ארבעים מעלות, ובפנים גיהינום עם שלט!",
+     "sfx": []
+    },
+    {
+     "id": "s03_l4",
+     "kind": "line",
+     "from": 988,
+     "dur": 45,
+     "speechDur": 43,
+     "who": "roee",
+     "he": "אחים שלי, הסופ״ש הזה אנחנו לא ישנים!",
+     "sfx": [
+      {
+       "s": "pop",
+       "at": 990,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s03_slam",
+     "kind": "beat",
+     "from": 1033,
+     "dur": 22,
+     "label": "Bathroom door slams",
+     "sfx": [
+      {
+       "s": "slam",
+       "at": 1033,
+       "vol": 1
+      },
+      {
+       "s": "squeak",
+       "at": 1045,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s03_l5",
+     "kind": "line",
+     "from": 1055,
+     "dur": 44,
+     "speechDur": 42,
+     "who": "nir",
+     "he": "מי הבן זונה שגמר את הנייר?!",
+     "sfx": []
+    },
+    {
+     "id": "s03_alarm",
+     "kind": "beat",
+     "from": 1099,
+     "dur": 43,
+     "label": "Red emergency light — EMERGENCY #1",
+     "sfx": [
+      {
+       "s": "alarm",
+       "at": 1099,
+       "vol": 1
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "theme",
+     "vol": 0.3,
+     "from": 794,
+     "to": 1033
+    }
+   ],
+   "ambience": [],
+   "timer": {
+    "start": 92,
+    "end": 117
+   }
+  },
+  {
+   "id": "s04",
+   "n": 4,
+   "title": "טקס הצלחת הראשון",
+   "location": "דירה באילת — 2 שעות אחרי ההגעה",
+   "from": 1142,
+   "dur": 403,
+   "items": [
+    {
+     "id": "s04_tick",
+     "kind": "beat",
+     "from": 1142,
+     "dur": 22,
+     "label": "Clock ticks to exactly two hours",
+     "sfx": [
+      {
+       "s": "tick",
+       "at": 1142,
+       "vol": 1
+      },
+      {
+       "s": "tick",
+       "at": 1153,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s04_gong",
+     "kind": "beat",
+     "from": 1164,
+     "dur": 43,
+     "label": "DONG — everything freezes, spotlight on the plate",
+     "sfx": [
+      {
+       "s": "gong",
+       "at": 1164,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s04_l1",
+     "kind": "line",
+     "from": 1207,
+     "dur": 25,
+     "speechDur": 20,
+     "who": "marom",
+     "he": "הגיע הזמן.",
+     "sfx": []
+    },
+    {
+     "id": "s04_l2",
+     "kind": "line",
+     "from": 1232,
+     "dur": 32,
+     "speechDur": 30,
+     "who": "nir",
+     "he": "עוד פעם? רק הגענו!",
+     "sfx": []
+    },
+    {
+     "id": "s04_l3",
+     "kind": "line",
+     "from": 1264,
+     "dur": 36,
+     "speechDur": 31,
+     "who": "roee",
+     "he": "לא מזלזלים במסורת.",
+     "sfx": []
+    },
+    {
+     "id": "s04_bow",
+     "kind": "beat",
+     "from": 1300,
+     "dur": 48,
+     "label": "Synchronised formal bow toward the plate",
+     "sfx": [
+      {
+       "s": "whoosh",
+       "at": 1307,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s04_choir",
+     "kind": "beat",
+     "from": 1348,
+     "dur": 43,
+     "label": "Exterior: absurd choir, sparkle puff",
+     "sfx": [
+      {
+       "s": "choir",
+       "at": 1348,
+       "vol": 1
+      },
+      {
+       "s": "sparkle",
+       "at": 1382,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s04_faces",
+     "kind": "beat",
+     "from": 1391,
+     "dur": 34,
+     "label": "Three wide-eyed faces",
+     "sfx": [
+      {
+       "s": "boing",
+       "at": 1396,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s04_n1",
+     "kind": "line",
+     "from": 1425,
+     "dur": 120,
+     "speechDur": 110,
+     "who": "narr",
+     "he": "ומאותו רגע, כל שעתיים, נערך הטקס הקדוש שאף אחד לא היה מוכן להסביר.",
+     "sfx": []
+    }
+   ],
+   "music": [
+    {
+     "track": "ceremony",
+     "vol": 0.55,
+     "from": 1300,
+     "to": 1391
+    }
+   ],
+   "ambience": [],
+   "timer": {
+    "start": 117,
+    "end": 120,
+    "resetAt": 1164
+   }
+  },
+  {
+   "id": "s05",
+   "n": 5,
+   "title": "חוף מוש",
+   "location": "חוף מוש — יום",
+   "from": 1545,
+   "dur": 469,
+   "items": [
+    {
+     "id": "s05_beach",
+     "kind": "beat",
+     "from": 1545,
+     "dur": 24,
+     "label": "Beautiful beach, three guys with drinks",
+     "sfx": []
+    },
+    {
+     "id": "s05_l1",
+     "kind": "line",
+     "from": 1569,
+     "dur": 28,
+     "speechDur": 26,
+     "who": "guard",
+     "he": "מה יש לכם בכוס?",
+     "sfx": []
+    },
+    {
+     "id": "s05_l2",
+     "kind": "line",
+     "from": 1597,
+     "dur": 19,
+     "speechDur": 15,
+     "who": "marom",
+     "he": "ויטמינים.",
+     "sfx": []
+    },
+    {
+     "id": "s05_l3",
+     "kind": "line",
+     "from": 1616,
+     "dur": 33,
+     "speechDur": 31,
+     "who": "nir",
+     "he": "כן, בעיקר ויטמין וודקה.",
+     "sfx": []
+    },
+    {
+     "id": "s05_look",
+     "kind": "beat",
+     "from": 1649,
+     "dur": 24,
+     "label": "Guard gives a suspicious look",
+     "sfx": [
+      {
+       "s": "sting",
+       "at": 1649,
+       "vol": 0.35
+      }
+     ]
+    },
+    {
+     "id": "s05_l4",
+     "kind": "line",
+     "from": 1673,
+     "dur": 49,
+     "speechDur": 47,
+     "who": "roee",
+     "he": "תקשיבו, אני הולך להביא לנו חברות לסופ״ש.",
+     "sfx": []
+    },
+    {
+     "id": "s05_l5",
+     "kind": "line",
+     "from": 1722,
+     "dur": 27,
+     "speechDur": 25,
+     "who": "nir",
+     "he": "רואי, רק אל תדבר.",
+     "sfx": []
+    },
+    {
+     "id": "s05_approach",
+     "kind": "beat",
+     "from": 1749,
+     "dur": 34,
+     "label": "Roee struts over, the women laugh",
+     "sfx": [
+      {
+       "s": "steps",
+       "at": 1749,
+       "vol": 1
+      },
+      {
+       "s": "giggle",
+       "at": 1766,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s05_l6",
+     "kind": "line",
+     "from": 1783,
+     "dur": 39,
+     "speechDur": 37,
+     "who": "roee",
+     "he": "תגידו, יש לכן תוכניות לערב?",
+     "sfx": []
+    },
+    {
+     "id": "s05_l7",
+     "kind": "line",
+     "from": 1822,
+     "dur": 18,
+     "speechDur": 16,
+     "who": "girl",
+     "he": "אולי, למה?",
+     "sfx": []
+    },
+    {
+     "id": "s05_l8",
+     "kind": "line",
+     "from": 1840,
+     "dur": 63,
+     "speechDur": 61,
+     "who": "roee",
+     "he": "כי יש לנו דירה, מזגן שלא עובד, ואפס נייר טואלט.",
+     "sfx": []
+    },
+    {
+     "id": "s05_silence",
+     "kind": "beat",
+     "from": 1903,
+     "dur": 48,
+     "label": "SILENCE. The women leave.",
+     "sfx": [
+      {
+       "s": "crickets",
+       "at": 1903,
+       "vol": 1
+      },
+      {
+       "s": "steps",
+       "at": 1927,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s05_l9",
+     "kind": "line",
+     "from": 1951,
+     "dur": 34,
+     "speechDur": 32,
+     "who": "nir",
+     "he": "וואלה, מכרת את זה יפה.",
+     "sfx": []
+    },
+    {
+     "id": "s05_count",
+     "kind": "beat",
+     "from": 1985,
+     "dur": 29,
+     "label": "Counter: 4",
+     "sfx": [
+      {
+       "s": "boing",
+       "at": 1985,
+       "vol": 1
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "beach",
+     "vol": 0.32,
+     "from": 1545,
+     "to": 1903
+    }
+   ],
+   "ambience": [
+    {
+     "track": "waves",
+     "vol": 0.45
+    }
+   ],
+   "timer": {
+    "start": 14,
+    "end": 48
+   }
+  },
+  {
+   "id": "s06",
+   "n": 6,
+   "title": "הבנות בדירה",
+   "location": "הדירה — ערב",
+   "from": 2014,
+   "dur": 511,
+   "items": [
+    {
+     "id": "s06_prep",
+     "kind": "beat",
+     "from": 2014,
+     "dur": 48,
+     "label": "Nir cleans, Marom smacks the AC remote, Roee rehearses in the mirror",
+     "sfx": [
+      {
+       "s": "bonk",
+       "at": 2026,
+       "vol": 1
+      },
+      {
+       "s": "bonk",
+       "at": 2040,
+       "vol": 1
+      },
+      {
+       "s": "spray",
+       "at": 2052,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s06_bell",
+     "kind": "beat",
+     "from": 2062,
+     "dur": 19,
+     "label": "Doorbell",
+     "sfx": [
+      {
+       "s": "doorbell",
+       "at": 2062,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s06_l1",
+     "kind": "line",
+     "from": 2081,
+     "dur": 20,
+     "speechDur": 18,
+     "who": "girl",
+     "he": "איזה נחמד פה!",
+     "sfx": []
+    },
+    {
+     "id": "s06_l2",
+     "kind": "line",
+     "from": 2101,
+     "dur": 37,
+     "speechDur": 35,
+     "who": "marom",
+     "he": "חכי שתנסי את המזגן.",
+     "sfx": []
+    },
+    {
+     "id": "s06_l3",
+     "kind": "line",
+     "from": 2138,
+     "dur": 49,
+     "speechDur": 47,
+     "who": "roee",
+     "he": "תקשיבו, אנחנו שלושה גברים מאוד איכותיים.",
+     "sfx": []
+    },
+    {
+     "id": "s06_scream",
+     "kind": "beat",
+     "from": 2187,
+     "dur": 14,
+     "label": "Scream from the bathroom",
+     "sfx": [
+      {
+       "s": "squeak",
+       "at": 2187,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s06_l4",
+     "kind": "line",
+     "from": 2201,
+     "dur": 39,
+     "speechDur": 37,
+     "who": "nir",
+     "he": "מרוםםם! תביא נייררר!",
+     "sfx": []
+    },
+    {
+     "id": "s06_alarm",
+     "kind": "beat",
+     "from": 2240,
+     "dur": 31,
+     "label": "Bathroom emergency #2",
+     "sfx": [
+      {
+       "s": "alarm",
+       "at": 2240,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s06_l5",
+     "kind": "line",
+     "from": 2271,
+     "dur": 37,
+     "speechDur": 35,
+     "who": "roee",
+     "he": "אז כמו שאמרתי, מאוד איכותיים.",
+     "sfx": []
+    },
+    {
+     "id": "s06_looks",
+     "kind": "beat",
+     "from": 2308,
+     "dur": 22,
+     "label": "The women exchange looks",
+     "sfx": []
+    },
+    {
+     "id": "s06_l6",
+     "kind": "line",
+     "from": 2330,
+     "dur": 50,
+     "speechDur": 48,
+     "who": "girl2",
+     "he": "טוב… נראה לי שאנחנו נזוז.",
+     "sfx": []
+    },
+    {
+     "id": "s06_slam",
+     "kind": "beat",
+     "from": 2380,
+     "dur": 19,
+     "label": "Door slams",
+     "sfx": [
+      {
+       "s": "slam",
+       "at": 2380,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s06_n1",
+     "kind": "line",
+     "from": 2399,
+     "dur": 102,
+     "speechDur": 97,
+     "who": "narr",
+     "he": "הן היו אמורות להישאר כל הסופ״ש. הן לא שרדו אפילו עד הטקס הבא.",
+     "sfx": []
+    },
+    {
+     "id": "s06_count",
+     "kind": "beat",
+     "from": 2501,
+     "dur": 24,
+     "label": "Counter: 8",
+     "sfx": [
+      {
+       "s": "boing",
+       "at": 2501,
+       "vol": 1
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "lounge",
+     "vol": 0.28,
+     "from": 2014,
+     "to": 2187
+    }
+   ],
+   "ambience": [],
+   "timer": {
+    "start": 55,
+    "end": 82
+   }
+  },
+  {
+   "id": "s07",
+   "n": 7,
+   "title": "סלינה",
+   "location": "סלינה — לילה",
+   "from": 2525,
+   "dur": 373,
+   "items": [
+    {
+     "id": "s07_club",
+     "kind": "beat",
+     "from": 2525,
+     "dur": 29,
+     "label": "Neon, loud music, drinks ordered",
+     "sfx": []
+    },
+    {
+     "id": "s07_l1",
+     "kind": "line",
+     "from": 2554,
+     "dur": 29,
+     "speechDur": 27,
+     "who": "nir",
+     "he": "מה זה המחיר הזה?!",
+     "sfx": []
+    },
+    {
+     "id": "s07_l2",
+     "kind": "line",
+     "from": 2583,
+     "dur": 38,
+     "speechDur": 36,
+     "who": "marom",
+     "he": "מה הזמנו, את כל הבר?!",
+     "sfx": []
+    },
+    {
+     "id": "s07_l3",
+     "kind": "line",
+     "from": 2621,
+     "dur": 35,
+     "speechDur": 33,
+     "who": "roee",
+     "he": "עזבו כסף, תראו כמה בחורות!",
+     "sfx": []
+    },
+    {
+     "id": "s07_terror",
+     "kind": "beat",
+     "from": 2656,
+     "dur": 22,
+     "label": "Nir and Marom exchange a look of terror",
+     "sfx": [
+      {
+       "s": "sting",
+       "at": 2656,
+       "vol": 0.4
+      }
+     ]
+    },
+    {
+     "id": "s07_l4",
+     "kind": "line",
+     "from": 2678,
+     "dur": 29,
+     "speechDur": 24,
+     "who": "nir",
+     "he": "לא. רואי. לא.",
+     "sfx": []
+    },
+    {
+     "id": "s07_smash",
+     "kind": "beat",
+     "from": 2707,
+     "dur": 43,
+     "label": "SMASH CUT — the women are already leaving",
+     "sfx": [
+      {
+       "s": "scratch",
+       "at": 2707,
+       "vol": 1
+      },
+      {
+       "s": "steps",
+       "at": 2719,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s07_l5",
+     "kind": "line",
+     "from": 2750,
+     "dur": 36,
+     "speechDur": 34,
+     "who": "roee",
+     "he": "אחי, אני נשבע לך, הן היו בקטע!",
+     "sfx": []
+    },
+    {
+     "id": "s07_n1",
+     "kind": "line",
+     "from": 2786,
+     "dur": 88,
+     "speechDur": 83,
+     "who": "narr",
+     "he": "בשלב הזה גם המאבטחים התחילו להזהיר את הבחורות מראש.",
+     "sfx": []
+    },
+    {
+     "id": "s07_count",
+     "kind": "beat",
+     "from": 2874,
+     "dur": 24,
+     "label": "Counter: 13",
+     "sfx": [
+      {
+       "s": "boing",
+       "at": 2874,
+       "vol": 1
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "club",
+     "vol": 0.5,
+     "from": 2525,
+     "to": 2898
+    }
+   ],
+   "ambience": [
+    {
+     "track": "clubRoom",
+     "vol": 0.3
+    }
+   ],
+   "timer": {
+    "start": 20,
+    "end": 52
+   }
+  },
+  {
+   "id": "s08",
+   "n": 8,
+   "title": "הצלחת חוזרת",
+   "location": "הדירה — 2 שעות אחרי הטקס הקודם",
+   "from": 2898,
+   "dur": 356,
+   "items": [
+    {
+     "id": "s08_return",
+     "kind": "beat",
+     "from": 2898,
+     "dur": 29,
+     "label": "The guys stumble back in",
+     "sfx": [
+      {
+       "s": "slam",
+       "at": 2898,
+       "vol": 0.5
+      },
+      {
+       "s": "tick",
+       "at": 2915,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s08_gong",
+     "kind": "beat",
+     "from": 2927,
+     "dur": 36,
+     "label": "DONG!",
+     "sfx": [
+      {
+       "s": "gong",
+       "at": 2927,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s08_l1",
+     "kind": "line",
+     "from": 2963,
+     "dur": 26,
+     "speechDur": 24,
+     "who": "marom",
+     "he": "כולם לעמדות.",
+     "sfx": []
+    },
+    {
+     "id": "s08_l2",
+     "kind": "line",
+     "from": 2989,
+     "dur": 28,
+     "speechDur": 26,
+     "who": "nir",
+     "he": "אני באמצע לחרבן!",
+     "sfx": []
+    },
+    {
+     "id": "s08_l3",
+     "kind": "line",
+     "from": 3017,
+     "dur": 41,
+     "speechDur": 36,
+     "who": "roee",
+     "he": "הטקס לא מחכה לאף אחד.",
+     "sfx": []
+    },
+    {
+     "id": "s08_bow",
+     "kind": "beat",
+     "from": 3058,
+     "dur": 53,
+     "label": "Heavenly spotlight. Religious bow.",
+     "sfx": [
+      {
+       "s": "choir",
+       "at": 3058,
+       "vol": 0.6
+      },
+      {
+       "s": "whoosh",
+       "at": 3068,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s08_cave",
+     "kind": "beat",
+     "from": 3111,
+     "dur": 19,
+     "label": "Mock-documentary cave painting",
+     "sfx": [
+      {
+       "s": "sparkle",
+       "at": 3113,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s08_n1",
+     "kind": "line",
+     "from": 3130,
+     "dur": 84,
+     "speechDur": 77,
+     "who": "narr",
+     "he": "חוקרי תרבויות עדיין מנסים להבין מה לעזאזל קרה שם.",
+     "sfx": []
+    },
+    {
+     "id": "s08_l4",
+     "kind": "line",
+     "from": 3214,
+     "dur": 40,
+     "speechDur": 33,
+     "who": "nir",
+     "he": "אבל מי לקח את הנייר?!",
+     "sfx": [
+      {
+       "s": "squeak",
+       "at": 3216,
+       "vol": 1
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "ceremony",
+     "vol": 0.55,
+     "from": 3058,
+     "to": 3111
+    }
+   ],
+   "ambience": [],
+   "timer": {
+    "start": 118,
+    "end": 120,
+    "resetAt": 2927
+   }
+  },
+  {
+   "id": "s09",
+   "n": 9,
+   "title": "ארוחת הבוקר",
+   "location": "מלון — בוקר",
+   "from": 3254,
+   "dur": 294,
+   "items": [
+    {
+     "id": "s09_receipt",
+     "kind": "beat",
+     "from": 3254,
+     "dur": 36,
+     "label": "A receipt arrives: 500 ₪",
+     "sfx": [
+      {
+       "s": "sting",
+       "at": 3271,
+       "vol": 0.5
+      }
+     ]
+    },
+    {
+     "id": "s09_l1",
+     "kind": "line",
+     "from": 3290,
+     "dur": 28,
+     "speechDur": 26,
+     "who": "nir",
+     "he": "חמש מאות שקל?!",
+     "sfx": []
+    },
+    {
+     "id": "s09_l2",
+     "kind": "line",
+     "from": 3318,
+     "dur": 36,
+     "speechDur": 34,
+     "who": "marom",
+     "he": "מה אכלנו, את המלצר?!",
+     "sfx": []
+    },
+    {
+     "id": "s09_l3",
+     "kind": "line",
+     "from": 3354,
+     "dur": 28,
+     "speechDur": 26,
+     "who": "roee",
+     "he": "אחי, לפחות היה טעים.",
+     "sfx": []
+    },
+    {
+     "id": "s09_l4",
+     "kind": "line",
+     "from": 3382,
+     "dur": 43,
+     "speechDur": 41,
+     "who": "nir",
+     "he": "אכלת חביתה ולחמנייה, יא חמור!",
+     "sfx": []
+    },
+    {
+     "id": "s09_register",
+     "kind": "beat",
+     "from": 3425,
+     "dur": 38,
+     "label": "Zoom into the bill. Cash register screams.",
+     "sfx": [
+      {
+       "s": "registerScream",
+       "at": 3425,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s09_n1",
+     "kind": "line",
+     "from": 3463,
+     "dur": 85,
+     "speechDur": 75,
+     "who": "narr",
+     "he": "שלוש ביצים, שתי לחמניות, ומשכנתה לשלושים שנה.",
+     "sfx": [
+      {
+       "s": "register",
+       "at": 3468,
+       "vol": 0.4
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "lounge",
+     "vol": 0.25,
+     "from": 3254,
+     "to": 3425
+    }
+   ],
+   "ambience": [],
+   "timer": {
+    "start": 64,
+    "end": 90
+   }
+  },
+  {
+   "id": "s10",
+   "n": 10,
+   "title": "רויאל גארדן",
+   "location": "בריכת המלון — יום",
+   "from": 3548,
+   "dur": 311,
+   "items": [
+    {
+     "id": "s10_pool",
+     "kind": "beat",
+     "from": 3548,
+     "dur": 34,
+     "label": "Relaxing by the pool. Perfect.",
+     "sfx": []
+    },
+    {
+     "id": "s10_l1",
+     "kind": "line",
+     "from": 3582,
+     "dur": 35,
+     "speechDur": 33,
+     "who": "roee",
+     "he": "תקשיבו, הפעם אני בא רגוע.",
+     "sfx": []
+    },
+    {
+     "id": "s10_l2",
+     "kind": "line",
+     "from": 3617,
+     "dur": 36,
+     "speechDur": 34,
+     "who": "nir",
+     "he": "זה בדיוק מה שמפחיד אותי.",
+     "sfx": []
+    },
+    {
+     "id": "s10_approach",
+     "kind": "beat",
+     "from": 3653,
+     "dur": 58,
+     "label": "Roee approaches… seconds later the women walk away",
+     "sfx": [
+      {
+       "s": "steps",
+       "at": 3653,
+       "vol": 1
+      },
+      {
+       "s": "scratch",
+       "at": 3682,
+       "vol": 1
+      },
+      {
+       "s": "steps",
+       "at": 3687,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s10_l3",
+     "kind": "line",
+     "from": 3711,
+     "dur": 41,
+     "speechDur": 39,
+     "who": "marom",
+     "he": "אחי, אולי פשוט תפסיק לדבר?",
+     "sfx": []
+    },
+    {
+     "id": "s10_l4",
+     "kind": "line",
+     "from": 3752,
+     "dur": 26,
+     "speechDur": 24,
+     "who": "roee",
+     "he": "אתם לא מבינים נשים.",
+     "sfx": []
+    },
+    {
+     "id": "s10_l5",
+     "kind": "line",
+     "from": 3778,
+     "dur": 57,
+     "speechDur": 55,
+     "who": "nir",
+     "he": "נכון. אבל אנחנו מבינים למה הן בורחות.",
+     "sfx": []
+    },
+    {
+     "id": "s10_count",
+     "kind": "beat",
+     "from": 3835,
+     "dur": 24,
+     "label": "Counter: 19",
+     "sfx": [
+      {
+       "s": "boing",
+       "at": 3835,
+       "vol": 1
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "beach",
+     "vol": 0.3,
+     "from": 3548,
+     "to": 3859
+    }
+   ],
+   "ambience": [
+    {
+     "track": "pool",
+     "vol": 0.35
+    }
+   ],
+   "timer": {
+    "start": 30,
+    "end": 58
+   }
+  },
+  {
+   "id": "s11",
+   "n": 11,
+   "title": "הן חזרו!",
+   "location": "הדירה — אחר הצהריים",
+   "from": 3859,
+   "dur": 363,
+   "items": [
+    {
+     "id": "s11_notif",
+     "kind": "beat",
+     "from": 3859,
+     "dur": 22,
+     "label": "Phone notification",
+     "sfx": [
+      {
+       "s": "ding",
+       "at": 3859,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s11_l1",
+     "kind": "line",
+     "from": 3881,
+     "dur": 32,
+     "speechDur": 30,
+     "who": "roee",
+     "he": "אחים שלי! הבנות חוזרות!",
+     "sfx": []
+    },
+    {
+     "id": "s11_prep",
+     "kind": "beat",
+     "from": 3913,
+     "dur": 43,
+     "label": "Celebration: hair, perfume, poses",
+     "sfx": [
+      {
+       "s": "spray",
+       "at": 3932,
+       "vol": 1
+      },
+      {
+       "s": "sparkle",
+       "at": 3951,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s11_enter",
+     "kind": "beat",
+     "from": 3956,
+     "dur": 19,
+     "label": "The women enter",
+     "sfx": [
+      {
+       "s": "doorbell",
+       "at": 3956,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s11_l2",
+     "kind": "line",
+     "from": 3975,
+     "dur": 41,
+     "speechDur": 39,
+     "who": "girl",
+     "he": "באנו לקחת את המזוודה ששכחנו.",
+     "sfx": []
+    },
+    {
+     "id": "s11_take",
+     "kind": "beat",
+     "from": 4016,
+     "dur": 53,
+     "label": "Silence. They take the suitcase and leave.",
+     "sfx": [
+      {
+       "s": "crickets",
+       "at": 4016,
+       "vol": 1
+      },
+      {
+       "s": "steps",
+       "at": 4035,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s11_l3",
+     "kind": "line",
+     "from": 4069,
+     "dur": 36,
+     "speechDur": 34,
+     "who": "marom",
+     "he": "אז… לא נשארות?",
+     "sfx": []
+    },
+    {
+     "id": "s11_slam",
+     "kind": "beat",
+     "from": 4105,
+     "dur": 19,
+     "label": "Door slams",
+     "sfx": [
+      {
+       "s": "slam",
+       "at": 4105,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s11_n1",
+     "kind": "line",
+     "from": 4124,
+     "dur": 98,
+     "speechDur": 88,
+     "who": "narr",
+     "he": "פעם ראשונה בהיסטוריה שמזוודה קיבלה יותר יחס משלושה גברים.",
+     "sfx": []
+    }
+   ],
+   "music": [
+    {
+     "track": "theme",
+     "vol": 0.4,
+     "from": 3881,
+     "to": 3956
+    }
+   ],
+   "ambience": [],
+   "timer": {
+    "start": 70,
+    "end": 96
+   }
+  },
+  {
+   "id": "s12",
+   "n": 12,
+   "title": "הרודס והגשם",
+   "location": "מלון הרודס — יום",
+   "from": 4222,
+   "dur": 263,
+   "items": [
+    {
+     "id": "s12_pose",
+     "kind": "beat",
+     "from": 4222,
+     "dur": 34,
+     "label": "Posing like millionaires",
+     "sfx": [
+      {
+       "s": "sparkle",
+       "at": 4222,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s12_l1",
+     "kind": "line",
+     "from": 4256,
+     "dur": 27,
+     "speechDur": 25,
+     "who": "nir",
+     "he": "סוף סוף מקום ברמה.",
+     "sfx": []
+    },
+    {
+     "id": "s12_l2",
+     "kind": "line",
+     "from": 4283,
+     "dur": 38,
+     "speechDur": 36,
+     "who": "marom",
+     "he": "יש פה מזגן נורמלי לפחות?",
+     "sfx": []
+    },
+    {
+     "id": "s12_rain",
+     "kind": "beat",
+     "from": 4321,
+     "dur": 24,
+     "label": "Thunder — rain pours",
+     "sfx": [
+      {
+       "s": "thunder",
+       "at": 4321,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s12_l3",
+     "kind": "line",
+     "from": 4345,
+     "dur": 44,
+     "speechDur": 42,
+     "who": "roee",
+     "he": "מה זה החרא הזה?! באנו לאילת!",
+     "sfx": []
+    },
+    {
+     "id": "s12_run",
+     "kind": "beat",
+     "from": 4389,
+     "dur": 72,
+     "label": "Running through the rain; Roee flirts, woman escapes into a taxi",
+     "sfx": [
+      {
+       "s": "steps",
+       "at": 4389,
+       "vol": 1
+      },
+      {
+       "s": "steps",
+       "at": 4418,
+       "vol": 1
+      },
+      {
+       "s": "slam",
+       "at": 4447,
+       "vol": 0.6
+      },
+      {
+       "s": "whoosh",
+       "at": 4451,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s12_count",
+     "kind": "beat",
+     "from": 4461,
+     "dur": 24,
+     "label": "Counter: 20",
+     "sfx": [
+      {
+       "s": "boing",
+       "at": 4461,
+       "vol": 1
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "tension",
+     "vol": 0.35,
+     "from": 4321,
+     "to": 4485
+    }
+   ],
+   "ambience": [
+    {
+     "track": "rain",
+     "vol": 0.5
+    }
+   ],
+   "timer": {
+    "start": 38,
+    "end": 60
+   }
+  },
+  {
+   "id": "s13",
+   "n": 13,
+   "title": "אפוקליפסת הנייר",
+   "location": "שירותים שונים — מונטאז׳",
+   "from": 4485,
+   "dur": 515,
+   "items": [
+    {
+     "id": "s13_split",
+     "kind": "beat",
+     "from": 4485,
+     "dur": 24,
+     "label": "Three-way split screen, every roll empty",
+     "sfx": [
+      {
+       "s": "squeak",
+       "at": 4485,
+       "vol": 1
+      },
+      {
+       "s": "squeak",
+       "at": 4495,
+       "vol": 1
+      },
+      {
+       "s": "squeak",
+       "at": 4502,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s13_screams",
+     "kind": "beat",
+     "from": 4509,
+     "dur": 24,
+     "label": "THREE SIMULTANEOUS SCREAMS",
+     "sfx": [
+      {
+       "s": "scream3",
+       "at": 4509,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s13_l1",
+     "kind": "line",
+     "from": 4533,
+     "dur": 34,
+     "speechDur": 32,
+     "who": "nir",
+     "he": "מרוםםם! נייררר!",
+     "sfx": []
+    },
+    {
+     "id": "s13_l2",
+     "kind": "line",
+     "from": 4567,
+     "dur": 35,
+     "speechDur": 33,
+     "who": "marom",
+     "he": "רואייי! תביא מגבונים!",
+     "sfx": []
+    },
+    {
+     "id": "s13_l3",
+     "kind": "line",
+     "from": 4602,
+     "dur": 34,
+     "speechDur": 32,
+     "who": "roee",
+     "he": "גם אני תקוע, יא בני זונות!",
+     "sfx": []
+    },
+    {
+     "id": "s13_command",
+     "kind": "beat",
+     "from": 4636,
+     "dur": 53,
+     "label": "Military command center: OPERATION CODE BROWN",
+     "sfx": [
+      {
+       "s": "siren",
+       "at": 4636,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s13_heli",
+     "kind": "beat",
+     "from": 4689,
+     "dur": 62,
+     "label": "Helicopter over Eilat with a giant roll",
+     "sfx": [
+      {
+       "s": "heli",
+       "at": 4689,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s13_fall",
+     "kind": "beat",
+     "from": 4751,
+     "dur": 53,
+     "label": "The roll falls into the sea. Silence.",
+     "sfx": [
+      {
+       "s": "whoosh",
+       "at": 4751,
+       "vol": 1
+      },
+      {
+       "s": "splash",
+       "at": 4773,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s13_l4",
+     "kind": "line",
+     "from": 4804,
+     "dur": 41,
+     "speechDur": 36,
+     "who": "nir",
+     "he": "אני בחיים לא נוסע איתכם יותר.",
+     "sfx": []
+    },
+    {
+     "id": "s13_gong",
+     "kind": "beat",
+     "from": 4845,
+     "dur": 36,
+     "label": "DONG! They slowly turn to the plate",
+     "sfx": [
+      {
+       "s": "gong",
+       "at": 4845,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s13_l5",
+     "kind": "line",
+     "from": 4881,
+     "dur": 44,
+     "speechDur": 42,
+     "who": "roee",
+     "he": "אבל קודם… הטקס.",
+     "sfx": []
+    },
+    {
+     "id": "s13_bow",
+     "kind": "beat",
+     "from": 4925,
+     "dur": 53,
+     "label": "Perfectly synchronised bow",
+     "sfx": [
+      {
+       "s": "choir",
+       "at": 4925,
+       "vol": 0.8
+      }
+     ]
+    },
+    {
+     "id": "s13_black",
+     "kind": "beat",
+     "from": 4978,
+     "dur": 22,
+     "label": "SMASH CUT TO BLACK",
+     "sfx": [
+      {
+       "s": "smash",
+       "at": 4978,
+       "vol": 1
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "heroic",
+     "vol": 0.6,
+     "from": 4636,
+     "to": 4751
+    }
+   ],
+   "ambience": [],
+   "timer": {
+    "start": 112,
+    "end": 120,
+    "resetAt": 4845
+   }
+  },
+  {
+   "id": "s14",
+   "n": 14,
+   "title": "הדרך הביתה",
+   "location": "האוטו — שקיעה",
+   "from": 5000,
+   "dur": 397,
+   "items": [
+    {
+     "id": "s14_car",
+     "kind": "beat",
+     "from": 5000,
+     "dur": 38,
+     "label": "Sunset drive. Everyone exhausted.",
+     "sfx": []
+    },
+    {
+     "id": "s14_l1",
+     "kind": "line",
+     "from": 5038,
+     "dur": 45,
+     "speechDur": 43,
+     "who": "marom",
+     "he": "תגידו… מתי נוסעים שוב?",
+     "sfx": []
+    },
+    {
+     "id": "s14_l2",
+     "kind": "line",
+     "from": 5083,
+     "dur": 18,
+     "speechDur": 16,
+     "who": "nir",
+     "he": "בחיים לא.",
+     "sfx": []
+    },
+    {
+     "id": "s14_l3",
+     "kind": "line",
+     "from": 5101,
+     "dur": 36,
+     "speechDur": 34,
+     "who": "roee",
+     "he": "אני מכיר כמה בנות שיבואו איתנו.",
+     "sfx": []
+    },
+    {
+     "id": "s14_l4",
+     "kind": "line",
+     "from": 5137,
+     "dur": 16,
+     "speechDur": 14,
+     "who": "both",
+     "he": "לאאאאא!",
+     "sfx": []
+    },
+    {
+     "id": "s14_freeze",
+     "kind": "beat",
+     "from": 5153,
+     "dur": 12,
+     "label": "Freeze frame",
+     "sfx": [
+      {
+       "s": "scratch",
+       "at": 5153,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s14_n1",
+     "kind": "line",
+     "from": 5165,
+     "dur": 141,
+     "speechDur": 134,
+     "who": "narr",
+     "he": "שלושה חברים. ארבעה ימים. עשרים בחורות שברחו. אינסוף חירבונים. ואפס נייר טואלט.",
+     "sfx": []
+    },
+    {
+     "id": "s14_end",
+     "kind": "beat",
+     "from": 5306,
+     "dur": 91,
+     "label": "End title + subtitle",
+     "sfx": [
+      {
+       "s": "sting",
+       "at": 5306,
+       "vol": 0.6
+      }
+     ]
+    }
+   ],
+   "music": [
+    {
+     "track": "ending",
+     "vol": 0.4,
+     "from": 5165,
+     "to": 5397
+    }
+   ],
+   "ambience": [
+    {
+     "track": "engine",
+     "vol": 0.3
+    }
+   ],
+   "timer": {
+    "start": 40,
+    "end": 62
+   }
+  },
+  {
+   "id": "s15",
+   "n": 15,
+   "title": "הקללה ממשיכה",
+   "location": "פוסט־קרדיטס",
+   "from": 5397,
+   "dur": 216,
+   "items": [
+    {
+     "id": "s15_black",
+     "kind": "beat",
+     "from": 5397,
+     "dur": 24,
+     "label": "Black screen",
+     "sfx": []
+    },
+    {
+     "id": "s15_msg",
+     "kind": "beat",
+     "from": 5421,
+     "dur": 62,
+     "label": "WhatsApp group \"אילת 2026\": message from Roee",
+     "sfx": [
+      {
+       "s": "ding",
+       "at": 5421,
+       "vol": 1
+      }
+     ]
+    },
+    {
+     "id": "s15_silence",
+     "kind": "beat",
+     "from": 5483,
+     "dur": 72,
+     "label": "Three seconds of silence",
+     "sfx": []
+    },
+    {
+     "id": "s15_gong",
+     "kind": "beat",
+     "from": 5555,
+     "dur": 58,
+     "label": "DONG! THE END.",
+     "sfx": [
+      {
+       "s": "gong",
+       "at": 5555,
+       "vol": 1
+      }
+     ]
+    }
+   ],
+   "music": [],
+   "ambience": [],
+   "timer": {
+    "start": 0,
+    "end": 0
+   }
+  }
+ ],
+ "counters": [
+  {
+   "at": "s03_alarm",
+   "bath": 1,
+   "frame": 1099
+  },
+  {
+   "at": "s05_silence",
+   "girls": 4,
+   "frame": 1903
+  },
+  {
+   "at": "s06_alarm",
+   "bath": 2,
+   "frame": 2240
+  },
+  {
+   "at": "s06_slam",
+   "girls": 8,
+   "frame": 2380
+  },
+  {
+   "at": "s07_smash",
+   "girls": 13,
+   "frame": 2707
+  },
+  {
+   "at": "s08_l2",
+   "bath": 3,
+   "frame": 2989
+  },
+  {
+   "at": "s10_l3",
+   "girls": 19,
+   "frame": 3711
+  },
+  {
+   "at": "s12_run",
+   "girls": 20,
+   "frame": 4389
+  },
+  {
+   "at": "s13_screams",
+   "bath": 6,
+   "frame": 4509
+  }
+ ]
+}

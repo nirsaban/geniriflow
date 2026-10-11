@@ -27,3 +27,6 @@ Dockerfile
 docker-compose.yml
 
 nginx/certs
+
+# Animated film production (separate project)
+eilat-2026

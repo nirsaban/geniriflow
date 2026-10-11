@@ -1,0 +1,1344 @@
+{
+ "title": "אילת 2026 — שלושה מטומטמים, אפס נייר טואלט",
+ "fps": 24,
+ "resolution": "1920x1080",
+ "durationSec": 233.88,
+ "scenes": [
+  {
+   "scene": 1,
+   "title": "הפלישה",
+   "location": "דירה של ניר — 2:00 בלילה",
+   "start": 0,
+   "duration": 20.21,
+   "shots": [
+    {
+     "id": "s01_sleep",
+     "start": 0,
+     "duration": 1.42,
+     "action": "Dark apartment, Nir snoring",
+     "sfx": [
+      "snore"
+     ]
+    },
+    {
+     "id": "s01_bang",
+     "start": 1.42,
+     "duration": 1.21,
+     "action": "BAM BAM BAM on the door",
+     "sfx": [
+      "knock"
+     ]
+    },
+    {
+     "id": "s01_l1",
+     "start": 2.63,
+     "duration": 1.54,
+     "speaker": "רואי",
+     "dialogue": "סבןןן! יא בן זונה, פתח!",
+     "sfx": [
+      "knock"
+     ]
+    },
+    {
+     "id": "s01_l2",
+     "start": 4.17,
+     "duration": 1.25,
+     "speaker": "ניר",
+     "dialogue": "מה קרה?! מלחמה?!",
+     "sfx": []
+    },
+    {
+     "id": "s01_l3",
+     "start": 5.42,
+     "duration": 2,
+     "speaker": "מרום",
+     "dialogue": "יותר גרוע. אנחנו נוסעים לאילת!",
+     "sfx": []
+    },
+    {
+     "id": "s01_l4",
+     "start": 7.42,
+     "duration": 1.92,
+     "speaker": "ניר",
+     "dialogue": "השעה שתיים בלילה, יא חולי נפש!",
+     "sfx": []
+    },
+    {
+     "id": "s01_l5",
+     "start": 9.33,
+     "duration": 1.33,
+     "speaker": "רואי",
+     "dialogue": "אחי, אנחנו כבר עם התיקים!",
+     "sfx": []
+    },
+    {
+     "id": "s01_l6",
+     "start": 10.67,
+     "duration": 0.88,
+     "speaker": "ניר",
+     "dialogue": "אני עובד מחר!",
+     "sfx": []
+    },
+    {
+     "id": "s01_l7",
+     "start": 11.54,
+     "duration": 1.46,
+     "speaker": "מרום",
+     "dialogue": "יש לך מחשב, לא?",
+     "sfx": []
+    },
+    {
+     "id": "s01_freeze",
+     "start": 13,
+     "duration": 0.5,
+     "action": "FREEZE FRAME",
+     "sfx": [
+      "scratch"
+     ]
+    },
+    {
+     "id": "s01_n1",
+     "start": 13.5,
+     "duration": 3.5,
+     "speaker": "קריין",
+     "dialogue": "וככה התחיל סופ״ש שהיה צריך להיגמר בצו הרחקה.",
+     "sfx": []
+    },
+    {
+     "id": "s01_title",
+     "start": 17,
+     "duration": 3.21,
+     "action": "TITLE CARD",
+     "sfx": [
+      "sting"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 2,
+   "title": "הנסיעה",
+   "location": "כביש 90 — בוקר",
+   "start": 20.21,
+   "duration": 12.88,
+   "shots": [
+    {
+     "id": "s02_drive",
+     "start": 20.21,
+     "duration": 1.29,
+     "action": "Car speeds through the desert",
+     "sfx": [
+      "whoosh"
+     ]
+    },
+    {
+     "id": "s02_sing",
+     "start": 21.5,
+     "duration": 2.08,
+     "speaker": "רואי",
+     "dialogue": "אילת, אילת, לה לה לה!",
+     "sfx": []
+    },
+    {
+     "id": "s02_l1",
+     "start": 23.58,
+     "duration": 0.92,
+     "speaker": "מנהל בזום",
+     "dialogue": "ניר, אתה איתנו?",
+     "sfx": []
+    },
+    {
+     "id": "s02_l2",
+     "start": 24.5,
+     "duration": 1.58,
+     "speaker": "ניר",
+     "dialogue": "כן, ברור, אני עובד מהבית.",
+     "sfx": []
+    },
+    {
+     "id": "s02_l3",
+     "start": 26.08,
+     "duration": 1.38,
+     "speaker": "רואי",
+     "dialogue": "אילתתת! יא בני זונות!",
+     "sfx": []
+    },
+    {
+     "id": "s02_mute",
+     "start": 27.46,
+     "duration": 0.58,
+     "action": "Nir slams mute",
+     "sfx": [
+      "click"
+     ]
+    },
+    {
+     "id": "s02_l4",
+     "start": 28.04,
+     "duration": 1.17,
+     "speaker": "ניר",
+     "dialogue": "אני אהרוג אתכם.",
+     "sfx": []
+    },
+    {
+     "id": "s02_n1",
+     "start": 29.21,
+     "duration": 3.88,
+     "speaker": "קריין",
+     "dialogue": "שלוש שעות עבודה, אפס שורות קוד, ומאה אחוז סיכוי לפיטורים.",
+     "sfx": []
+    }
+   ]
+  },
+  {
+   "scene": 3,
+   "title": "הדירה",
+   "location": "דירה באילת — צהריים",
+   "start": 33.08,
+   "duration": 14.5,
+   "shots": [
+    {
+     "id": "s03_enter",
+     "start": 33.08,
+     "duration": 1.79,
+     "action": "Door kicks open, suitcases fly, bottles pop",
+     "sfx": [
+      "slam",
+      "whoosh",
+      "bonk",
+      "pop",
+      "pop"
+     ]
+    },
+    {
+     "id": "s03_l1",
+     "start": 34.88,
+     "duration": 1.83,
+     "speaker": "מרום",
+     "dialogue": "מה זה המזגן המסריח הזה?!",
+     "sfx": []
+    },
+    {
+     "id": "s03_l2",
+     "start": 36.71,
+     "duration": 2.04,
+     "speaker": "ניר",
+     "dialogue": "מה אתה רוצה? הגענו לפני שלושים שניות!",
+     "sfx": []
+    },
+    {
+     "id": "s03_l3",
+     "start": 38.75,
+     "duration": 2.42,
+     "speaker": "מרום",
+     "dialogue": "בחוץ ארבעים מעלות, ובפנים גיהינום עם שלט!",
+     "sfx": []
+    },
+    {
+     "id": "s03_l4",
+     "start": 41.17,
+     "duration": 1.88,
+     "speaker": "רואי",
+     "dialogue": "אחים שלי, הסופ״ש הזה אנחנו לא ישנים!",
+     "sfx": [
+      "pop"
+     ]
+    },
+    {
+     "id": "s03_slam",
+     "start": 43.04,
+     "duration": 0.92,
+     "action": "Bathroom door slams",
+     "sfx": [
+      "slam",
+      "squeak"
+     ]
+    },
+    {
+     "id": "s03_l5",
+     "start": 43.96,
+     "duration": 1.83,
+     "speaker": "ניר",
+     "dialogue": "מי הבן זונה שגמר את הנייר?!",
+     "sfx": []
+    },
+    {
+     "id": "s03_alarm",
+     "start": 45.79,
+     "duration": 1.79,
+     "action": "Red emergency light — EMERGENCY #1",
+     "sfx": [
+      "alarm"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 4,
+   "title": "טקס הצלחת הראשון",
+   "location": "דירה באילת — 2 שעות אחרי ההגעה",
+   "start": 47.58,
+   "duration": 16.79,
+   "shots": [
+    {
+     "id": "s04_tick",
+     "start": 47.58,
+     "duration": 0.92,
+     "action": "Clock ticks to exactly two hours",
+     "sfx": [
+      "tick",
+      "tick"
+     ]
+    },
+    {
+     "id": "s04_gong",
+     "start": 48.5,
+     "duration": 1.79,
+     "action": "DONG — everything freezes, spotlight on the plate",
+     "sfx": [
+      "gong"
+     ]
+    },
+    {
+     "id": "s04_l1",
+     "start": 50.29,
+     "duration": 1.04,
+     "speaker": "מרום",
+     "dialogue": "הגיע הזמן.",
+     "sfx": []
+    },
+    {
+     "id": "s04_l2",
+     "start": 51.33,
+     "duration": 1.33,
+     "speaker": "ניר",
+     "dialogue": "עוד פעם? רק הגענו!",
+     "sfx": []
+    },
+    {
+     "id": "s04_l3",
+     "start": 52.67,
+     "duration": 1.5,
+     "speaker": "רואי",
+     "dialogue": "לא מזלזלים במסורת.",
+     "sfx": []
+    },
+    {
+     "id": "s04_bow",
+     "start": 54.17,
+     "duration": 2,
+     "action": "Synchronised formal bow toward the plate",
+     "sfx": [
+      "whoosh"
+     ]
+    },
+    {
+     "id": "s04_choir",
+     "start": 56.17,
+     "duration": 1.79,
+     "action": "Exterior: absurd choir, sparkle puff",
+     "sfx": [
+      "choir",
+      "sparkle"
+     ]
+    },
+    {
+     "id": "s04_faces",
+     "start": 57.96,
+     "duration": 1.42,
+     "action": "Three wide-eyed faces",
+     "sfx": [
+      "boing"
+     ]
+    },
+    {
+     "id": "s04_n1",
+     "start": 59.38,
+     "duration": 5,
+     "speaker": "קריין",
+     "dialogue": "ומאותו רגע, כל שעתיים, נערך הטקס הקדוש שאף אחד לא היה מוכן להסביר.",
+     "sfx": []
+    }
+   ]
+  },
+  {
+   "scene": 5,
+   "title": "חוף מוש",
+   "location": "חוף מוש — יום",
+   "start": 64.38,
+   "duration": 19.54,
+   "shots": [
+    {
+     "id": "s05_beach",
+     "start": 64.38,
+     "duration": 1,
+     "action": "Beautiful beach, three guys with drinks",
+     "sfx": []
+    },
+    {
+     "id": "s05_l1",
+     "start": 65.38,
+     "duration": 1.17,
+     "speaker": "מאבטח",
+     "dialogue": "מה יש לכם בכוס?",
+     "sfx": []
+    },
+    {
+     "id": "s05_l2",
+     "start": 66.54,
+     "duration": 0.79,
+     "speaker": "מרום",
+     "dialogue": "ויטמינים.",
+     "sfx": []
+    },
+    {
+     "id": "s05_l3",
+     "start": 67.33,
+     "duration": 1.38,
+     "speaker": "ניר",
+     "dialogue": "כן, בעיקר ויטמין וודקה.",
+     "sfx": []
+    },
+    {
+     "id": "s05_look",
+     "start": 68.71,
+     "duration": 1,
+     "action": "Guard gives a suspicious look",
+     "sfx": [
+      "sting"
+     ]
+    },
+    {
+     "id": "s05_l4",
+     "start": 69.71,
+     "duration": 2.04,
+     "speaker": "רואי",
+     "dialogue": "תקשיבו, אני הולך להביא לנו חברות לסופ״ש.",
+     "sfx": []
+    },
+    {
+     "id": "s05_l5",
+     "start": 71.75,
+     "duration": 1.13,
+     "speaker": "ניר",
+     "dialogue": "רואי, רק אל תדבר.",
+     "sfx": []
+    },
+    {
+     "id": "s05_approach",
+     "start": 72.88,
+     "duration": 1.42,
+     "action": "Roee struts over, the women laugh",
+     "sfx": [
+      "steps",
+      "giggle"
+     ]
+    },
+    {
+     "id": "s05_l6",
+     "start": 74.29,
+     "duration": 1.63,
+     "speaker": "רואי",
+     "dialogue": "תגידו, יש לכן תוכניות לערב?",
+     "sfx": []
+    },
+    {
+     "id": "s05_l7",
+     "start": 75.92,
+     "duration": 0.75,
+     "speaker": "בחורה",
+     "dialogue": "אולי, למה?",
+     "sfx": []
+    },
+    {
+     "id": "s05_l8",
+     "start": 76.67,
+     "duration": 2.63,
+     "speaker": "רואי",
+     "dialogue": "כי יש לנו דירה, מזגן שלא עובד, ואפס נייר טואלט.",
+     "sfx": []
+    },
+    {
+     "id": "s05_silence",
+     "start": 79.29,
+     "duration": 2,
+     "action": "SILENCE. The women leave.",
+     "sfx": [
+      "crickets",
+      "steps"
+     ]
+    },
+    {
+     "id": "s05_l9",
+     "start": 81.29,
+     "duration": 1.42,
+     "speaker": "ניר",
+     "dialogue": "וואלה, מכרת את זה יפה.",
+     "sfx": []
+    },
+    {
+     "id": "s05_count",
+     "start": 82.71,
+     "duration": 1.21,
+     "action": "Counter: 4",
+     "sfx": [
+      "boing"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 6,
+   "title": "הבנות בדירה",
+   "location": "הדירה — ערב",
+   "start": 83.92,
+   "duration": 21.29,
+   "shots": [
+    {
+     "id": "s06_prep",
+     "start": 83.92,
+     "duration": 2,
+     "action": "Nir cleans, Marom smacks the AC remote, Roee rehearses in the mirror",
+     "sfx": [
+      "bonk",
+      "bonk",
+      "spray"
+     ]
+    },
+    {
+     "id": "s06_bell",
+     "start": 85.92,
+     "duration": 0.79,
+     "action": "Doorbell",
+     "sfx": [
+      "doorbell"
+     ]
+    },
+    {
+     "id": "s06_l1",
+     "start": 86.71,
+     "duration": 0.83,
+     "speaker": "בחורה",
+     "dialogue": "איזה נחמד פה!",
+     "sfx": []
+    },
+    {
+     "id": "s06_l2",
+     "start": 87.54,
+     "duration": 1.54,
+     "speaker": "מרום",
+     "dialogue": "חכי שתנסי את המזגן.",
+     "sfx": []
+    },
+    {
+     "id": "s06_l3",
+     "start": 89.08,
+     "duration": 2.04,
+     "speaker": "רואי",
+     "dialogue": "תקשיבו, אנחנו שלושה גברים מאוד איכותיים.",
+     "sfx": []
+    },
+    {
+     "id": "s06_scream",
+     "start": 91.13,
+     "duration": 0.58,
+     "action": "Scream from the bathroom",
+     "sfx": [
+      "squeak"
+     ]
+    },
+    {
+     "id": "s06_l4",
+     "start": 91.71,
+     "duration": 1.63,
+     "speaker": "ניר",
+     "dialogue": "מרוםםם! תביא נייררר!",
+     "sfx": []
+    },
+    {
+     "id": "s06_alarm",
+     "start": 93.33,
+     "duration": 1.29,
+     "action": "Bathroom emergency #2",
+     "sfx": [
+      "alarm"
+     ]
+    },
+    {
+     "id": "s06_l5",
+     "start": 94.63,
+     "duration": 1.54,
+     "speaker": "רואי",
+     "dialogue": "אז כמו שאמרתי, מאוד איכותיים.",
+     "sfx": []
+    },
+    {
+     "id": "s06_looks",
+     "start": 96.17,
+     "duration": 0.92,
+     "action": "The women exchange looks",
+     "sfx": []
+    },
+    {
+     "id": "s06_l6",
+     "start": 97.08,
+     "duration": 2.08,
+     "speaker": "בחורה",
+     "dialogue": "טוב… נראה לי שאנחנו נזוז.",
+     "sfx": []
+    },
+    {
+     "id": "s06_slam",
+     "start": 99.17,
+     "duration": 0.79,
+     "action": "Door slams",
+     "sfx": [
+      "slam"
+     ]
+    },
+    {
+     "id": "s06_n1",
+     "start": 99.96,
+     "duration": 4.25,
+     "speaker": "קריין",
+     "dialogue": "הן היו אמורות להישאר כל הסופ״ש. הן לא שרדו אפילו עד הטקס הבא.",
+     "sfx": []
+    },
+    {
+     "id": "s06_count",
+     "start": 104.21,
+     "duration": 1,
+     "action": "Counter: 8",
+     "sfx": [
+      "boing"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 7,
+   "title": "סלינה",
+   "location": "סלינה — לילה",
+   "start": 105.21,
+   "duration": 15.54,
+   "shots": [
+    {
+     "id": "s07_club",
+     "start": 105.21,
+     "duration": 1.21,
+     "action": "Neon, loud music, drinks ordered",
+     "sfx": []
+    },
+    {
+     "id": "s07_l1",
+     "start": 106.42,
+     "duration": 1.21,
+     "speaker": "ניר",
+     "dialogue": "מה זה המחיר הזה?!",
+     "sfx": []
+    },
+    {
+     "id": "s07_l2",
+     "start": 107.63,
+     "duration": 1.58,
+     "speaker": "מרום",
+     "dialogue": "מה הזמנו, את כל הבר?!",
+     "sfx": []
+    },
+    {
+     "id": "s07_l3",
+     "start": 109.21,
+     "duration": 1.46,
+     "speaker": "רואי",
+     "dialogue": "עזבו כסף, תראו כמה בחורות!",
+     "sfx": []
+    },
+    {
+     "id": "s07_terror",
+     "start": 110.67,
+     "duration": 0.92,
+     "action": "Nir and Marom exchange a look of terror",
+     "sfx": [
+      "sting"
+     ]
+    },
+    {
+     "id": "s07_l4",
+     "start": 111.58,
+     "duration": 1.21,
+     "speaker": "ניר",
+     "dialogue": "לא. רואי. לא.",
+     "sfx": []
+    },
+    {
+     "id": "s07_smash",
+     "start": 112.79,
+     "duration": 1.79,
+     "action": "SMASH CUT — the women are already leaving",
+     "sfx": [
+      "scratch",
+      "steps"
+     ]
+    },
+    {
+     "id": "s07_l5",
+     "start": 114.58,
+     "duration": 1.5,
+     "speaker": "רואי",
+     "dialogue": "אחי, אני נשבע לך, הן היו בקטע!",
+     "sfx": []
+    },
+    {
+     "id": "s07_n1",
+     "start": 116.08,
+     "duration": 3.67,
+     "speaker": "קריין",
+     "dialogue": "בשלב הזה גם המאבטחים התחילו להזהיר את הבחורות מראש.",
+     "sfx": []
+    },
+    {
+     "id": "s07_count",
+     "start": 119.75,
+     "duration": 1,
+     "action": "Counter: 13",
+     "sfx": [
+      "boing"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 8,
+   "title": "הצלחת חוזרת",
+   "location": "הדירה — 2 שעות אחרי הטקס הקודם",
+   "start": 120.75,
+   "duration": 14.83,
+   "shots": [
+    {
+     "id": "s08_return",
+     "start": 120.75,
+     "duration": 1.21,
+     "action": "The guys stumble back in",
+     "sfx": [
+      "slam",
+      "tick"
+     ]
+    },
+    {
+     "id": "s08_gong",
+     "start": 121.96,
+     "duration": 1.5,
+     "action": "DONG!",
+     "sfx": [
+      "gong"
+     ]
+    },
+    {
+     "id": "s08_l1",
+     "start": 123.46,
+     "duration": 1.08,
+     "speaker": "מרום",
+     "dialogue": "כולם לעמדות.",
+     "sfx": []
+    },
+    {
+     "id": "s08_l2",
+     "start": 124.54,
+     "duration": 1.17,
+     "speaker": "ניר",
+     "dialogue": "אני באמצע לחרבן!",
+     "sfx": []
+    },
+    {
+     "id": "s08_l3",
+     "start": 125.71,
+     "duration": 1.71,
+     "speaker": "רואי",
+     "dialogue": "הטקס לא מחכה לאף אחד.",
+     "sfx": []
+    },
+    {
+     "id": "s08_bow",
+     "start": 127.42,
+     "duration": 2.21,
+     "action": "Heavenly spotlight. Religious bow.",
+     "sfx": [
+      "choir",
+      "whoosh"
+     ]
+    },
+    {
+     "id": "s08_cave",
+     "start": 129.63,
+     "duration": 0.79,
+     "action": "Mock-documentary cave painting",
+     "sfx": [
+      "sparkle"
+     ]
+    },
+    {
+     "id": "s08_n1",
+     "start": 130.42,
+     "duration": 3.5,
+     "speaker": "קריין",
+     "dialogue": "חוקרי תרבויות עדיין מנסים להבין מה לעזאזל קרה שם.",
+     "sfx": []
+    },
+    {
+     "id": "s08_l4",
+     "start": 133.92,
+     "duration": 1.67,
+     "speaker": "ניר",
+     "dialogue": "אבל מי לקח את הנייר?!",
+     "sfx": [
+      "squeak"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 9,
+   "title": "ארוחת הבוקר",
+   "location": "מלון — בוקר",
+   "start": 135.58,
+   "duration": 12.25,
+   "shots": [
+    {
+     "id": "s09_receipt",
+     "start": 135.58,
+     "duration": 1.5,
+     "action": "A receipt arrives: 500 ₪",
+     "sfx": [
+      "sting"
+     ]
+    },
+    {
+     "id": "s09_l1",
+     "start": 137.08,
+     "duration": 1.17,
+     "speaker": "ניר",
+     "dialogue": "חמש מאות שקל?!",
+     "sfx": []
+    },
+    {
+     "id": "s09_l2",
+     "start": 138.25,
+     "duration": 1.5,
+     "speaker": "מרום",
+     "dialogue": "מה אכלנו, את המלצר?!",
+     "sfx": []
+    },
+    {
+     "id": "s09_l3",
+     "start": 139.75,
+     "duration": 1.17,
+     "speaker": "רואי",
+     "dialogue": "אחי, לפחות היה טעים.",
+     "sfx": []
+    },
+    {
+     "id": "s09_l4",
+     "start": 140.92,
+     "duration": 1.79,
+     "speaker": "ניר",
+     "dialogue": "אכלת חביתה ולחמנייה, יא חמור!",
+     "sfx": []
+    },
+    {
+     "id": "s09_register",
+     "start": 142.71,
+     "duration": 1.58,
+     "action": "Zoom into the bill. Cash register screams.",
+     "sfx": [
+      "registerScream"
+     ]
+    },
+    {
+     "id": "s09_n1",
+     "start": 144.29,
+     "duration": 3.54,
+     "speaker": "קריין",
+     "dialogue": "שלוש ביצים, שתי לחמניות, ומשכנתה לשלושים שנה.",
+     "sfx": [
+      "register"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 10,
+   "title": "רויאל גארדן",
+   "location": "בריכת המלון — יום",
+   "start": 147.83,
+   "duration": 12.96,
+   "shots": [
+    {
+     "id": "s10_pool",
+     "start": 147.83,
+     "duration": 1.42,
+     "action": "Relaxing by the pool. Perfect.",
+     "sfx": []
+    },
+    {
+     "id": "s10_l1",
+     "start": 149.25,
+     "duration": 1.46,
+     "speaker": "רואי",
+     "dialogue": "תקשיבו, הפעם אני בא רגוע.",
+     "sfx": []
+    },
+    {
+     "id": "s10_l2",
+     "start": 150.71,
+     "duration": 1.5,
+     "speaker": "ניר",
+     "dialogue": "זה בדיוק מה שמפחיד אותי.",
+     "sfx": []
+    },
+    {
+     "id": "s10_approach",
+     "start": 152.21,
+     "duration": 2.42,
+     "action": "Roee approaches… seconds later the women walk away",
+     "sfx": [
+      "steps",
+      "scratch",
+      "steps"
+     ]
+    },
+    {
+     "id": "s10_l3",
+     "start": 154.63,
+     "duration": 1.71,
+     "speaker": "מרום",
+     "dialogue": "אחי, אולי פשוט תפסיק לדבר?",
+     "sfx": []
+    },
+    {
+     "id": "s10_l4",
+     "start": 156.33,
+     "duration": 1.08,
+     "speaker": "רואי",
+     "dialogue": "אתם לא מבינים נשים.",
+     "sfx": []
+    },
+    {
+     "id": "s10_l5",
+     "start": 157.42,
+     "duration": 2.38,
+     "speaker": "ניר",
+     "dialogue": "נכון. אבל אנחנו מבינים למה הן בורחות.",
+     "sfx": []
+    },
+    {
+     "id": "s10_count",
+     "start": 159.79,
+     "duration": 1,
+     "action": "Counter: 19",
+     "sfx": [
+      "boing"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 11,
+   "title": "הן חזרו!",
+   "location": "הדירה — אחר הצהריים",
+   "start": 160.79,
+   "duration": 15.13,
+   "shots": [
+    {
+     "id": "s11_notif",
+     "start": 160.79,
+     "duration": 0.92,
+     "action": "Phone notification",
+     "sfx": [
+      "ding"
+     ]
+    },
+    {
+     "id": "s11_l1",
+     "start": 161.71,
+     "duration": 1.33,
+     "speaker": "רואי",
+     "dialogue": "אחים שלי! הבנות חוזרות!",
+     "sfx": []
+    },
+    {
+     "id": "s11_prep",
+     "start": 163.04,
+     "duration": 1.79,
+     "action": "Celebration: hair, perfume, poses",
+     "sfx": [
+      "spray",
+      "sparkle"
+     ]
+    },
+    {
+     "id": "s11_enter",
+     "start": 164.83,
+     "duration": 0.79,
+     "action": "The women enter",
+     "sfx": [
+      "doorbell"
+     ]
+    },
+    {
+     "id": "s11_l2",
+     "start": 165.63,
+     "duration": 1.71,
+     "speaker": "בחורה",
+     "dialogue": "באנו לקחת את המזוודה ששכחנו.",
+     "sfx": []
+    },
+    {
+     "id": "s11_take",
+     "start": 167.33,
+     "duration": 2.21,
+     "action": "Silence. They take the suitcase and leave.",
+     "sfx": [
+      "crickets",
+      "steps"
+     ]
+    },
+    {
+     "id": "s11_l3",
+     "start": 169.54,
+     "duration": 1.5,
+     "speaker": "מרום",
+     "dialogue": "אז… לא נשארות?",
+     "sfx": []
+    },
+    {
+     "id": "s11_slam",
+     "start": 171.04,
+     "duration": 0.79,
+     "action": "Door slams",
+     "sfx": [
+      "slam"
+     ]
+    },
+    {
+     "id": "s11_n1",
+     "start": 171.83,
+     "duration": 4.08,
+     "speaker": "קריין",
+     "dialogue": "פעם ראשונה בהיסטוריה שמזוודה קיבלה יותר יחס משלושה גברים.",
+     "sfx": []
+    }
+   ]
+  },
+  {
+   "scene": 12,
+   "title": "הרודס והגשם",
+   "location": "מלון הרודס — יום",
+   "start": 175.92,
+   "duration": 10.96,
+   "shots": [
+    {
+     "id": "s12_pose",
+     "start": 175.92,
+     "duration": 1.42,
+     "action": "Posing like millionaires",
+     "sfx": [
+      "sparkle"
+     ]
+    },
+    {
+     "id": "s12_l1",
+     "start": 177.33,
+     "duration": 1.13,
+     "speaker": "ניר",
+     "dialogue": "סוף סוף מקום ברמה.",
+     "sfx": []
+    },
+    {
+     "id": "s12_l2",
+     "start": 178.46,
+     "duration": 1.58,
+     "speaker": "מרום",
+     "dialogue": "יש פה מזגן נורמלי לפחות?",
+     "sfx": []
+    },
+    {
+     "id": "s12_rain",
+     "start": 180.04,
+     "duration": 1,
+     "action": "Thunder — rain pours",
+     "sfx": [
+      "thunder"
+     ]
+    },
+    {
+     "id": "s12_l3",
+     "start": 181.04,
+     "duration": 1.83,
+     "speaker": "רואי",
+     "dialogue": "מה זה החרא הזה?! באנו לאילת!",
+     "sfx": []
+    },
+    {
+     "id": "s12_run",
+     "start": 182.88,
+     "duration": 3,
+     "action": "Running through the rain; Roee flirts, woman escapes into a taxi",
+     "sfx": [
+      "steps",
+      "steps",
+      "slam",
+      "whoosh"
+     ]
+    },
+    {
+     "id": "s12_count",
+     "start": 185.88,
+     "duration": 1,
+     "action": "Counter: 20",
+     "sfx": [
+      "boing"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 13,
+   "title": "אפוקליפסת הנייר",
+   "location": "שירותים שונים — מונטאז׳",
+   "start": 186.88,
+   "duration": 21.46,
+   "shots": [
+    {
+     "id": "s13_split",
+     "start": 186.88,
+     "duration": 1,
+     "action": "Three-way split screen, every roll empty",
+     "sfx": [
+      "squeak",
+      "squeak",
+      "squeak"
+     ]
+    },
+    {
+     "id": "s13_screams",
+     "start": 187.88,
+     "duration": 1,
+     "action": "THREE SIMULTANEOUS SCREAMS",
+     "sfx": [
+      "scream3"
+     ]
+    },
+    {
+     "id": "s13_l1",
+     "start": 188.88,
+     "duration": 1.42,
+     "speaker": "ניר",
+     "dialogue": "מרוםםם! נייררר!",
+     "sfx": []
+    },
+    {
+     "id": "s13_l2",
+     "start": 190.29,
+     "duration": 1.46,
+     "speaker": "מרום",
+     "dialogue": "רואייי! תביא מגבונים!",
+     "sfx": []
+    },
+    {
+     "id": "s13_l3",
+     "start": 191.75,
+     "duration": 1.42,
+     "speaker": "רואי",
+     "dialogue": "גם אני תקוע, יא בני זונות!",
+     "sfx": []
+    },
+    {
+     "id": "s13_command",
+     "start": 193.17,
+     "duration": 2.21,
+     "action": "Military command center: OPERATION CODE BROWN",
+     "sfx": [
+      "siren"
+     ]
+    },
+    {
+     "id": "s13_heli",
+     "start": 195.38,
+     "duration": 2.58,
+     "action": "Helicopter over Eilat with a giant roll",
+     "sfx": [
+      "heli"
+     ]
+    },
+    {
+     "id": "s13_fall",
+     "start": 197.96,
+     "duration": 2.21,
+     "action": "The roll falls into the sea. Silence.",
+     "sfx": [
+      "whoosh",
+      "splash"
+     ]
+    },
+    {
+     "id": "s13_l4",
+     "start": 200.17,
+     "duration": 1.71,
+     "speaker": "ניר",
+     "dialogue": "אני בחיים לא נוסע איתכם יותר.",
+     "sfx": []
+    },
+    {
+     "id": "s13_gong",
+     "start": 201.88,
+     "duration": 1.5,
+     "action": "DONG! They slowly turn to the plate",
+     "sfx": [
+      "gong"
+     ]
+    },
+    {
+     "id": "s13_l5",
+     "start": 203.38,
+     "duration": 1.83,
+     "speaker": "רואי",
+     "dialogue": "אבל קודם… הטקס.",
+     "sfx": []
+    },
+    {
+     "id": "s13_bow",
+     "start": 205.21,
+     "duration": 2.21,
+     "action": "Perfectly synchronised bow",
+     "sfx": [
+      "choir"
+     ]
+    },
+    {
+     "id": "s13_black",
+     "start": 207.42,
+     "duration": 0.92,
+     "action": "SMASH CUT TO BLACK",
+     "sfx": [
+      "smash"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 14,
+   "title": "הדרך הביתה",
+   "location": "האוטו — שקיעה",
+   "start": 208.33,
+   "duration": 16.54,
+   "shots": [
+    {
+     "id": "s14_car",
+     "start": 208.33,
+     "duration": 1.58,
+     "action": "Sunset drive. Everyone exhausted.",
+     "sfx": []
+    },
+    {
+     "id": "s14_l1",
+     "start": 209.92,
+     "duration": 1.88,
+     "speaker": "מרום",
+     "dialogue": "תגידו… מתי נוסעים שוב?",
+     "sfx": []
+    },
+    {
+     "id": "s14_l2",
+     "start": 211.79,
+     "duration": 0.75,
+     "speaker": "ניר",
+     "dialogue": "בחיים לא.",
+     "sfx": []
+    },
+    {
+     "id": "s14_l3",
+     "start": 212.54,
+     "duration": 1.5,
+     "speaker": "רואי",
+     "dialogue": "אני מכיר כמה בנות שיבואו איתנו.",
+     "sfx": []
+    },
+    {
+     "id": "s14_l4",
+     "start": 214.04,
+     "duration": 0.67,
+     "speaker": "ניר ומרום",
+     "dialogue": "לאאאאא!",
+     "sfx": []
+    },
+    {
+     "id": "s14_freeze",
+     "start": 214.71,
+     "duration": 0.5,
+     "action": "Freeze frame",
+     "sfx": [
+      "scratch"
+     ]
+    },
+    {
+     "id": "s14_n1",
+     "start": 215.21,
+     "duration": 5.88,
+     "speaker": "קריין",
+     "dialogue": "שלושה חברים. ארבעה ימים. עשרים בחורות שברחו. אינסוף חירבונים. ואפס נייר טואלט.",
+     "sfx": []
+    },
+    {
+     "id": "s14_end",
+     "start": 221.08,
+     "duration": 3.79,
+     "action": "End title + subtitle",
+     "sfx": [
+      "sting"
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 15,
+   "title": "הקללה ממשיכה",
+   "location": "פוסט־קרדיטס",
+   "start": 224.88,
+   "duration": 9,
+   "shots": [
+    {
+     "id": "s15_black",
+     "start": 224.88,
+     "duration": 1,
+     "action": "Black screen",
+     "sfx": []
+    },
+    {
+     "id": "s15_msg",
+     "start": 225.88,
+     "duration": 2.58,
+     "action": "WhatsApp group \"אילת 2026\": message from Roee",
+     "sfx": [
+      "ding"
+     ]
+    },
+    {
+     "id": "s15_silence",
+     "start": 228.46,
+     "duration": 3,
+     "action": "Three seconds of silence",
+     "sfx": []
+    },
+    {
+     "id": "s15_gong",
+     "start": 231.46,
+     "duration": 2.42,
+     "action": "DONG! THE END.",
+     "sfx": [
+      "gong"
+     ]
+    }
+   ]
+  }
+ ]
+}

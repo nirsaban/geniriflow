@@ -1,0 +1,36 @@
+{
+  "name": "eilat-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "אילת 2026 — שלושה מטומטמים, אפס נייר טואלט. Adult animated comedy production pipeline.",
+  "type": "module",
+  "scripts": {
+    "audio": "tsx scripts/build-audio.ts",
+    "timeline": "tsx scripts/build-timeline.ts",
+    "studio": "remotion studio src/index.ts",
+    "preview": "tsx scripts/render.ts preview",
+    "poc": "tsx scripts/render.ts poc",
+    "sheets": "tsx scripts/render.ts sheets",
+    "movie": "tsx scripts/render.ts movie",
+    "trailer": "tsx scripts/render.ts trailer",
+    "validate": "tsx scripts/validate.ts",
+    "all": "npm run audio && npm run timeline && npm run sheets && npm run poc && npm run movie && npm run trailer && npm run validate",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/rubik": "^5.3.0",
+    "@fontsource/secular-one": "^5.3.0",
+    "@remotion/bundler": "^4.0.300",
+    "@remotion/cli": "^4.0.300",
+    "@remotion/renderer": "^4.0.300",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.300"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.6.3"
+  }
+}
