@@ -2616,5 +2616,40 @@
   "op": "render trailer",
   "units": 1187,
   "usd": 0
+ },
+ {
+  "ts": "2026-10-21T16:15:31.031Z",
+  "provider": "local:mbrola-hb",
+  "op": "tts-line (short)",
+  "units": 1,
+  "usd": 0
+ },
+ {
+  "ts": "2026-10-21T16:15:31.124Z",
+  "provider": "local:mbrola-hb",
+  "op": "tts-line (short)",
+  "units": 1,
+  "usd": 0
+ },
+ {
+  "ts": "2026-10-21T16:15:31.203Z",
+  "provider": "local:mbrola-hb",
+  "op": "tts-line (short)",
+  "units": 1,
+  "usd": 0
+ },
+ {
+  "ts": "2026-10-21T16:15:31.296Z",
+  "provider": "local:mbrola-hb",
+  "op": "tts-line (short)",
+  "units": 1,
+  "usd": 0
+ },
+ {
+  "ts": "2026-10-21T16:22:37.331Z",
+  "provider": "local:remotion",
+  "op": "render bidet-nasa",
+  "units": 840,
+  "usd": 0
  }
 ]

@@ -29,6 +29,7 @@ export const VOICES: Record<string, VoiceProfile> = {
   manager: { db: 'hb1', f0: 110, speed: 1.05, range: 0.9, formant: 0.97, fx: 'highpass=f=350,lowpass=f=3200,acrusher=bits=10:mix=0.3' },
   girl: { db: 'hb2', f0: 215, speed: 1.12, range: 1.3, formant: 1.03, fx: 'equalizer=f=3000:t=q:w=1:g=2' },
   girl2: { db: 'hb2', f0: 190, speed: 1.0, range: 1.0, formant: 0.97, fx: '' },
+  heroine: { db: 'hb2', f0: 200, speed: 1.02, range: 1.35, formant: 1.0, fx: 'equalizer=f=2800:t=q:w=1:g=2' },
 };
 
 /** Overall delivery speed — tuned so the cut lands inside the 3:30–3:55 target. */

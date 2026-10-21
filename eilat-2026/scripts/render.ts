@@ -117,6 +117,9 @@ async function main() {
       console.log('wrote output/movie-final.mp4');
       break;
     }
+    case 'short':
+      await renderVideo(serveUrl, 'bidet-nasa', join(OUT, 'bidet-nasa.mp4'));
+      break;
     case 'trailer': {
       if (!existsSync(join(OUT, 'movie-final.mp4'))) throw new Error('render the movie first');
 

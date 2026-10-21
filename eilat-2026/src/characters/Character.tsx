@@ -286,6 +286,7 @@ export const Character: React.FC<CharacterProps> = (p) => {
                   <circle cx={14} cy={14} r={2.5} fill="#fff" />
                 </g>
               )}
+              {o.pattern === 'stripes' && <rect x={0} y={0} width={54} height={9} fill={o.patternColor} opacity={0.85} />}
               {o.pattern === 'plaid' && (
                 <g stroke={o.patternColor} strokeWidth={5} opacity={0.6}>
                   <line x1={0} y1={9} x2={36} y2={9} />
@@ -352,6 +353,12 @@ export const Character: React.FC<CharacterProps> = (p) => {
           <g>
             <path d={`M ${cx - 30} ${top} L ${cx} ${top + 90} L ${cx + 30} ${top} Z`} fill="#f4f4f4" stroke={OUT} strokeWidth={4} />
             <path d={`M ${cx - 6} ${top + 10} L ${cx + 6} ${top + 10} L ${cx + 9} ${top + 80} L ${cx} ${top + 92} L ${cx - 9} ${top + 80} Z`} fill="#c0392b" stroke={OUT} strokeWidth={3} />
+          </g>
+        )}
+        {o.choker && (
+          <g>
+            <path d={`M ${cx - 30} ${top - 2} Q ${cx} ${top + 14} ${cx + 30} ${top - 2}`} stroke="#dfe6ee" strokeWidth={7} fill="none" strokeDasharray="7 3" />
+            <path d={`M ${cx - 30} ${top - 2} Q ${cx} ${top + 14} ${cx + 30} ${top - 2}`} stroke={OUT} strokeWidth={1.5} fill="none" />
           </g>
         )}
         {o.chain && (
@@ -519,6 +526,7 @@ const Head: React.FC<HeadProps> = ({ d, o, uid, turn, expr, viseme, loud, blinki
           <g key={side}>
             <ellipse cx={earX(side)} cy={h * 0.02} rx={w * 0.075} ry={h * 0.1} fill={skin} stroke={OUT} strokeWidth={SW} />
             <path d={`M ${earX(side) - side * 4} ${-h * 0.03} q ${side * 8} ${h * 0.05} 0 ${h * 0.1}`} stroke={d.skinShade} strokeWidth={3} fill="none" />
+            {d.earrings && <circle cx={earX(side)} cy={h * 0.1} r={7} fill="#f4f8ff" stroke={OUT} strokeWidth={2.5} />}
           </g>
         ) : null,
       )}

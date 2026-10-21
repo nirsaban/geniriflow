@@ -292,6 +292,27 @@ export const SFX: Record<string, () => Buf> = {
     for (let k = 0; k < 12; k++) mix(b, tone(0.3, () => 2000 + rnd() * 4000, 'sine', (t) => env(t, 0.002, 0.08)), k * 0.05 + rnd() * 0.05, 0.3);
     return normalize(reverb(b, 0.4), 0.5);
   },
+  /** Jet engine spooling up inside the bidet. */
+  jet() {
+    const sec = 4;
+    const b = noiseBurst(sec, (t) => Math.min(1, t / 2.5) ** 1.5);
+    bp(b, (i) => 300 + 2600 * Math.min(1, i / SR / 3), 1.2);
+    mix(b, tone(sec, (t) => 180 + 900 * Math.min(1, t / 3) ** 2, 'saw', (t) => 0.25 * Math.min(1, t / 2)), 0);
+    return normalize(lp(b, 6000));
+  },
+  /** A massive water blast. */
+  blast() {
+    const b = buf(2.4);
+    mix(b, tone(0.8, (t) => 70 - 30 * t, 'sine', (t) => env(t, 0.002, 0.3)), 0, 1);
+    mix(b, lp(noiseBurst(2.4, (t) => env(t, 0.01, 0.9)), (i) => 9000 * Math.exp(-(i / SR) * 1.2) + 500), 0, 1.2);
+    return normalize(reverb(b, 0.25, 1.3));
+  },
+  /** Low-orbit hum. */
+  space() {
+    const b = buf(6);
+    for (const f of [55, 82.5, 110]) mix(b, tone(6, (t) => f * (1 + 0.003 * Math.sin(t * 2)), 'sine', (t) => 0.3 * Math.min(1, t, 6 - t)), 0);
+    return normalize(reverb(b, 0.5, 1.5), 0.6);
+  },
   spray() {
     const b = hp(noiseBurst(0.6, (t) => Math.min(1, t * 30) * Math.min(1, (0.6 - t) * 6)), 4000);
     return normalize(b, 0.5);

@@ -5,7 +5,7 @@
 // (no photos of them were supplied).
 
 export type CharId = 'nir' | 'roee' | 'marom';
-export type ExtraId = 'girlA' | 'girlB' | 'girlC' | 'girlD' | 'guard' | 'manager';
+export type ExtraId = 'girlA' | 'girlB' | 'girlC' | 'girlD' | 'guard' | 'manager' | 'heroine';
 export type Look = 'home' | 'travel' | 'beach' | 'club' | 'hotel' | 'pool';
 
 export interface Outfit {
@@ -22,6 +22,7 @@ export interface Outfit {
   chain?: boolean;
   shadesOnHead?: boolean;
   print?: string; // short text printed on the shirt
+  choker?: boolean;
 }
 
 export interface Design {
@@ -29,6 +30,7 @@ export interface Design {
   name: string;
   female?: boolean;
   lips?: string;
+  earrings?: boolean;
   skin: string;
   skinShade: string;
   hair: string;
@@ -186,6 +188,26 @@ export const EXTRAS: Record<ExtraId, Design> = {
   girlB: girl('girlB', '#c98e62', '#2a1a12', '#5b3a28', 'curly', dress('#ffd166', '#e0b040'), swim('#06d6a0', '#05a87d', '#06d6a0'), crop('#ef476f', '#c92f55', '#1b1b2a')),
   girlC: girl('girlC', '#f3c7a6', '#c2452d', '#e2734f', 'pony', crop('#4cc9f0', '#2fa6cc', '#f2f2f2'), swim('#f9844a', '#d96a30', '#f9844a'), dress('#111111', '#000000')),
   girlD: girl('girlD', '#e0ac85', '#141018', '#3a3040', 'bun', dress('#80ed99', '#5bc977'), swim('#3a86ff', '#2a68d0', '#3a86ff'), dress('#e63946', '#b8202d')),
+  // Short "בידה NASA": built from a user-supplied reference photo, with her consent.
+  // Long straight dark-brown hair with a centre part, dark eyes, full lips, stud earrings,
+  // a silver choker and a pink-and-white striped top (full coverage) with light jeans.
+  heroine: {
+    ...girl(
+      'heroine',
+      '#e9bf9b',
+      '#2a1d18',
+      '#4a362d',
+      'long',
+      { top: '#f4a6c0', topDark: '#d9809f', topStyle: 'tee', sleeves: 'short', pattern: 'stripes', patternColor: '#ffffff', bottom: '#cfd9e3', bottomDark: '#aab8c6', bottomStyle: 'pants', shoes: '#f2f2f2', choker: true },
+      { top: '#f4a6c0', topDark: '#d9809f', topStyle: 'tee', sleeves: 'short', pattern: 'stripes', patternColor: '#ffffff', bottom: '#cfd9e3', bottomDark: '#aab8c6', bottomStyle: 'pants', shoes: '#f2f2f2', choker: true },
+      { top: '#f4a6c0', topDark: '#d9809f', topStyle: 'tee', sleeves: 'short', pattern: 'stripes', patternColor: '#ffffff', bottom: '#cfd9e3', bottomDark: '#aab8c6', bottomStyle: 'pants', shoes: '#f2f2f2', choker: true },
+    ),
+    name: 'היא',
+    lips: '#c9604f',
+    earrings: true,
+    headW: 140,
+    headH: 166,
+  },
   guard: {
     id: 'guard',
     name: 'מאבטח',
