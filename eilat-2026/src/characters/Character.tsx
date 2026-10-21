@@ -102,6 +102,8 @@ export interface CharacterProps {
   /** skip auto talk gestures */
   still?: boolean;
   wet?: boolean;
+  /** cut-out photo head (real face from a reference photo) with an animated jaw */
+  photo?: { head: string; jaw: string; jawOpen?: number };
 }
 
 const ARM_POSES: Record<ArmPose, [number, number]> = {
@@ -394,7 +396,11 @@ export const Character: React.FC<CharacterProps> = (p) => {
         {armsBehind && !p.crossed && arm(farSide, farSide === -1 ? aL : aR, farSide === -1 ? p.propL : p.propR, true)}
         {torso()}
         <g transform={`translate(${headTurn * 8},${headY + frontBow * 60 + talkNod}) rotate(${(p.tilt ?? 0) + (frontBow * 0)})`}>
-          <Head d={d} o={o} uid={uid} turn={headTurn} expr={p.expr ?? 'neutral'} viseme={viseme} loud={loud} blinking={blinking} gaze={p.gaze} f={abs} fx={fx} wet={p.wet} />
+          {p.photo ? (
+            <PhotoHead photo={p.photo} viseme={viseme} skin={d.skin} o={o} />
+          ) : (
+            <Head d={d} o={o} uid={uid} turn={headTurn} expr={p.expr ?? 'neutral'} viseme={viseme} loud={loud} blinking={blinking} gaze={p.gaze} f={abs} fx={fx} wet={p.wet} />
+          )}
         </g>
         {p.crossed ? (
           <CrossedArms d={d} o={o} tw={tw} shY={shY} upper={upperColor} lower={lowerColor} />
@@ -422,6 +428,32 @@ const CrossedArms: React.FC<{ d: Design; o: Outfit; tw: number; shY: number; upp
       <circle cx={tw / 2 - 18} cy={y - 6} r={aw * 0.55} fill={d.skin} stroke={OUT} strokeWidth={SW} />
       <circle cx={-tw / 2 + 18} cy={y + 16} r={aw * 0.55} fill={d.skin} stroke={OUT} strokeWidth={SW} />
       {o.sleeves === 'long' && <line x1={-tw / 2 + 40} y1={y + 6} x2={tw / 2 - 40} y2={y + 6} stroke={o.topDark} strokeWidth={3} />}
+    </g>
+  );
+};
+
+// ───────────────────────── photo cut-out head ─────────────────────────
+// Image geometry (420×470 px): face centre ≈ (230,240), lip seam y ≈ 327, mouth centre x ≈ 186, chin y ≈ 418.
+const JAW_OPEN: Record<string, number> = { A: 1, O: 0.75, E: 0.6, C: 0.4, F: 0.2, M: 0, X: 0 };
+const PhotoHead: React.FC<{ photo: { head: string; jaw: string; jawOpen?: number }; viseme: string | null; skin: string; o: Outfit }> = ({ photo, viseme, skin, o }) => {
+  const k = 0.66;
+  const x0 = -230 * k;
+  const y0 = -236;
+  const open = photo.jawOpen ?? (viseme ? JAW_OPEN[viseme] ?? 0.4 : 0);
+  const d = open * 24;
+  const mx = x0 + 186 * k, my = y0 + 327 * k;
+  return (
+    <g>
+      <rect x={-34} y={0} width={68} height={80} fill={skin} stroke={OUT} strokeWidth={4} />
+      {o.choker && <path d="M -34 52 Q 0 66 34 52" stroke="#dfe6ee" strokeWidth={8} fill="none" strokeDasharray="7 3" />}
+      <image href={photo.head} x={x0} y={y0} width={420 * k} height={470 * k} />
+      {d > 0.5 && (
+        <g>
+          <ellipse cx={mx} cy={my + d / 2} rx={44 * k + d * 0.3} ry={d / 2 + 2} fill="#3a0e14" />
+          <ellipse cx={mx} cy={my + d * 0.85} rx={26 * k} ry={d * 0.22} fill="#c45a6a" />
+        </g>
+      )}
+      <image href={photo.jaw} x={x0} y={y0 + d} width={420 * k} height={470 * k} />
     </g>
   );
 };

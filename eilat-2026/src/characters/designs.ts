@@ -194,7 +194,7 @@ export const EXTRAS: Record<ExtraId, Design> = {
   heroine: {
     ...girl(
       'heroine',
-      '#e9bf9b',
+      '#cfa07c',
       '#2a1d18',
       '#4a362d',
       'long',

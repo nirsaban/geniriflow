@@ -4,6 +4,9 @@
 
 import React from 'react';
 import { AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, interpolate } from 'remotion';
+
+// Real face cut out of the user's reference photo (kept out of git: assets/shorts/bidet/private).
+const PHOTO = { head: staticFile('shorts/bidet/private/head.png'), jaw: staticFile('shorts/bidet/private/jaw.png') };
 import { Stage, Flash, SpeedLines } from '../components/Stage';
 import { Character, OUT } from '../characters/Character';
 import { Bathroom, ToiletBack, ToiletFront, PaperHolder } from '../backgrounds/Backgrounds';
@@ -47,7 +50,7 @@ const Rider: React.FC<{ f: number; expr: Expr; arms?: React.ComponentProps<typeo
       </g>
     )}
     <ToiletBack x={0} y={-30} />
-    <Character id="heroine" look="travel" x={0} y={0} scale={0.95} legs="sit" expr={expr} armR={arms ?? 'down'} armL={armL ?? arms ?? 'down'} turn={turn} mouth={mouthAt(f)} voice="none" fx={fx} still />
+    <Character id="heroine" look="travel" x={0} y={0} scale={0.95} legs="sit" expr={expr} armR={arms ?? 'down'} armL={armL ?? arms ?? 'down'} turn={turn} mouth={mouthAt(f)} voice="none" fx={fx} still photo={{ ...PHOTO, jawOpen: expr === 'panic' && !mouthAt(f) ? 0.7 : undefined }} />
     <ToiletFront x={0} y={30} />
   </g>
 );
@@ -248,7 +251,7 @@ export const BidetNasa: React.FC = () => {
         ) : (
           <g>
             <ToiletBack x={960} y={980} />
-            <Character id="heroine" look="travel" x={x} y={1010} scale={0.95} legs={walkT < 1 ? 'walk' : 'stand'} phase={f / 12} turn={walkT < 1 ? 1 : 0} expr="neutral" voice="none" still />
+            <Character id="heroine" look="travel" x={x} y={1010} scale={0.95} legs={walkT < 1 ? 'walk' : 'stand'} phase={f / 12} turn={walkT < 1 ? 1 : 0} expr="neutral" voice="none" still photo={PHOTO} />
             <ToiletFront x={960} y={1040} />
           </g>
         )}

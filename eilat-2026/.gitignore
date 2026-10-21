@@ -3,3 +3,5 @@ node_modules
 output/previews
 *.log
 assets/render
+assets/shorts/bidet/private
+output/bidet-nasa.mp4
